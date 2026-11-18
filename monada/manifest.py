@@ -42,7 +42,7 @@ def lint_item(item: dict, day: int, reveal_day: int, kind: str) -> tuple[list[st
         for m in FINANCE.finditer(txt):
             errors.append(f"{field}: financial claim '{m.group(0)}' — needs evidence, keep out of public copy")
         for m in NOW.finditer(txt):
-            warns.append(f"{field}: '{m.group(0)}' — archive is 2024–2025, don't describe footage as current")
+            warns.append(f"{field}: '{m.group(0)}' — archive is 2023–2024, don't describe footage as current")
         if TESTIMONIAL.search(txt):
             errors.append(f"{field}: looks like a testimonial/review — none may be invented")
     return errors, warns

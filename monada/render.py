@@ -121,10 +121,10 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: hook,{f},64,{white},{white},&H00000000,{shadow},0,0,0,0,100,100,1,0,1,0,2,8,90,90,340,1
-Style: line,{f},52,{white},{white},&H00000000,{shadow},0,0,0,0,100,100,1,0,1,0,2,2,100,100,560,1
-Style: brand,{fb},84,{white},{white},&H00000000,{shadow},0,0,0,0,100,100,18,0,1,0,1,2,80,80,520,1
-Style: story,{f},54,{white},{white},&H00000000,{shadow},0,0,0,0,100,100,1,0,1,0,2,2,100,100,430,1
+Style: hook,{f},64,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,8,90,90,340,1
+Style: line,{f},52,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,2,100,100,560,1
+Style: brand,{fb},84,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,18,0,1,3,0,2,80,80,520,1
+Style: story,{f},54,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,2,100,100,430,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -146,7 +146,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for i, tx in enumerate(texts, 1):
         sh = shot_at(tx["start"] + 0.05)
         light_frame = sh["fit"] == "frame" and not is_dark(sh["lighting"])
-        colour = r"{\c&H2A2A2A&\4a&HFF&}" if light_frame else ""
+        colour = r"{\c&H2A2A2A&\3a&HFF&\4a&HFF&}" if light_frame else r"{\blur8}"
         body = tx["text"].replace("{", "(").replace("}", ")").replace(" m²", r"\hm²")
         if tx["style"] == "brand" and "\n" in body:
             head, _, rest = body.partition("\n")
@@ -379,7 +379,7 @@ def render_carousel(spec: dict, archive: Path, cfg: dict) -> list[Path]:
     return outs
 
 
-def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: bool = False, skip_en: bool = False) -> None:
+def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: bool = False, skip_en: bool = False, resume: bool = False) -> None:
     cfg = settings()
     specs = sorted(SPECS.glob("*.json"))
     if not specs:
@@ -391,12 +391,17 @@ def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: 
         if skip_b and spec.get("variant") == "B":
             continue
         if spec["kind"] == "carousel":
-            if spec["slides"]:
+            if spec["slides"] and not (resume and (OUT / "carousels" / spec["out"] / "caption.txt").exists()):
                 outs = render_carousel(spec, archive, cfg)
                 print(f"✓ {p.stem}: {len(outs)} slides")
             continue
         if skip_en and spec["kind"] != "reel":
             continue
+        if resume:
+            sub = {"reel": "reels", "story": "stories"}[spec["kind"]]
+            need = ([] if skip_en else [""]) + [f"_{l}" for l in (langs if spec["kind"] == "reel" else [])]
+            if all((OUT / sub / f"{spec['out']}{x}.qa.json").exists() for x in need):
+                continue
         res = render_video(spec, archive, cfg, langs if spec["kind"] == "reel" else [], skip_en)
         for lang, q in res.items():
             print(f"✓ {p.stem} [{lang}]: {q['duration']}s" + (f"  ⚠ {len(q['warnings'])} warning(s)" if q["warnings"] else ""), flush=True)

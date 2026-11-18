@@ -26,6 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--only", nargs="*", help="substrings of spec names, e.g. R01 D05 C1")
     r.add_argument("--langs", nargs="*", default=[], help="extra burned-in subtitle versions: zh ko")
     r.add_argument("--no-b", action="store_true", help="skip alternate-hook B cuts")
+    r.add_argument("--resume", action="store_true", help="skip outputs that already exist")
     r.add_argument("--skip-en", action="store_true", help="only the --langs versions (EN already rendered)")
     sub.add_parser("lint")
     sub.add_parser("manifest")
@@ -39,7 +40,7 @@ def main(argv: list[str] | None = None) -> int:
         compose_all()
     elif args.cmd == "render":
         from .render import render_all
-        render_all(args.archive.resolve(), args.only, args.langs, args.no_b, args.skip_en)
+        render_all(args.archive.resolve(), args.only, args.langs, args.no_b, args.skip_en, args.resume)
     elif args.cmd == "lint":
         from .manifest import lint_all
         res = lint_all()
