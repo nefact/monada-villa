@@ -35,7 +35,7 @@ ab4f60fa575c,icloud_new_villa/2023-05-05_035.jpg,office,day,wide,,0.5,n,n,?,y,
 a7e2db058ac3,icloud_new_villa/2023-05-05_036.jpg,living;detail,day,medium,,0.5,n,n,?,y,
 3499b65f95ae,icloud_new_villa/2023-05-05_037.jpg,pool;garden;exterior,day,wide,,0.5,n,n,?,y,
 46f78f33515c,icloud_new_villa/2023-05-05_038.jpg,garden;pool;exterior,day,wide,,0.5,n,n,?,y,
-b93e8c5de77f,icloud_new_villa/2023-05-06_039.jpg,office;pool,day,medium,,0.5,n,n,?,y,
+b93e8c5de77f,icloud_new_villa/2023-05-06_039.jpg,office;detail,day,medium,,0.5,n,n,?,y,pool only through window
 6a8fe44a5e2e,icloud_new_villa/2023-05-06_040.jpg,bedroom,day,wide,,0.5,n,n,?,y,
 7c201eb48cbd,icloud_new_villa/2023-05-06_042.jpg,bedroom,day,wide,,0.5,n,n,?,y,
 96a3c00240be,icloud_new_villa/2023-05-14_043.jpg,kitchen;detail,day,detail,,0.5,n,n,?,y,
@@ -52,7 +52,7 @@ e753113e1296,icloud_new_villa/2023-05-14_045.jpg,kitchen,day,wide,,0.5,n,n,?,y,
 9e521908644c_s05,icloud_new_villa/2023-06-14_050.mp4,pool;terrace,day,move,,0.5,n,?,?,y,
 9e521908644c_s06,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,y,
 9e521908644c_s07,icloud_new_villa/2023-06-14_050.mp4,kitchen,day,move,,0.5,n,?,?,y,
-9e521908644c_s08,icloud_new_villa/2023-06-14_050.mp4,pool;garden,day,move,,0.5,n,?,?,y,
+9e521908644c_s08,icloud_new_villa/2023-06-14_050.mp4,pool;garden,day,move,,0.5,n,?,?,n,tilted; shoes in frame
 9e521908644c_s09,icloud_new_villa/2023-06-14_050.mp4,office,day,move,,0.5,n,?,?,y,
 9e521908644c_s10,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,n,blurred curtains
 9e521908644c_s11,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,n,tilted/blur
@@ -66,7 +66,7 @@ e753113e1296,icloud_new_villa/2023-05-14_045.jpg,kitchen,day,wide,,0.5,n,n,?,y,
 63eb88b51854_s04,icloud_new_villa/2023-10-30_051.mp4,detail;pool,day,move,,0.5,n,?,?,y,
 63eb88b51854_s05,icloud_new_villa/2023-10-30_051.mp4,living,day,move,,0.5,n,?,?,y,
 63eb88b51854_s06,icloud_new_villa/2023-10-30_051.mp4,kitchen;living,day,move,,0.5,n,?,?,y,
-63eb88b51854_s07,icloud_new_villa/2023-10-30_051.mp4,pool;garden,day,move,,0.5,n,?,?,y,
+63eb88b51854_s07,icloud_new_villa/2023-10-30_051.mp4,pool;garden,day,move,,0.5,n,?,?,n,tilted; shoes in frame
 63eb88b51854_s08,icloud_new_villa/2023-10-30_051.mp4,bedroom,day,move,,0.5,n,?,?,y,
 63eb88b51854_s09,icloud_new_villa/2023-10-30_051.mp4,living,day,move,,0.5,n,?,?,n,blurred
 63eb88b51854_s10,icloud_new_villa/2023-10-30_051.mp4,bathroom,day,move,,0.5,n,?,?,y,

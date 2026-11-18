@@ -121,10 +121,10 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: hook,{f},64,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,8,90,90,340,1
-Style: line,{f},52,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,2,100,100,560,1
-Style: brand,{fb},84,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,18,0,1,3,0,2,80,80,520,1
-Style: story,{f},54,{white},{white},&H70000000,{shadow},0,0,0,0,100,100,1,0,1,3,0,2,100,100,430,1
+Style: hook,{f},64,{white},{white},&H50000000,{shadow},0,0,0,0,100,100,1,0,1,4,0,8,90,90,340,1
+Style: line,{f},52,{white},{white},&H50000000,{shadow},0,0,0,0,100,100,1,0,1,4,0,2,100,100,560,1
+Style: brand,{fb},84,{white},{white},&H50000000,{shadow},0,0,0,0,100,100,18,0,1,4,0,2,80,80,520,1
+Style: story,{f},54,{white},{white},&H50000000,{shadow},0,0,0,0,100,100,1,0,1,4,0,2,100,100,430,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
