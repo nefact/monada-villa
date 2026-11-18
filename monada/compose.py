@@ -30,8 +30,13 @@ class Picker:
         subj, light = set(need.get("subject") or []), set(need.get("lighting") or [])
         stype, prefer = set(need.get("shot_type") or []), need.get("prefer")
         out = []
+        pin = need.get("pin")
         for s in self.shots:
             if s["shot_id"] in exclude:
+                continue
+            if pin:
+                if s["shot_id"] == pin:
+                    out.append((999.0, s))
                 continue
             if subj and not (split_tags(s["subject"]) & subj):
                 continue
@@ -121,7 +126,10 @@ def fill(picker: Picker, story: dict, td: float, max_len: float) -> tuple[list[d
         chosen.append((slot, d, s))
         used.add(s["shot_id"])
         if slot.get("role") == "hook":
-            alt = next((c[1] for c in cands[1:] if c[1]["shot_id"] != s["shot_id"]), None)
+            pool = picker.candidates({k: v for k, v in need.items() if k != "pin"}, used, "hook") if slot.get("pin") else cands[1:]
+            if slot.get("alt_pin"):
+                pool = picker.candidates({"pin": slot["alt_pin"]}, used, "hook") or pool
+            alt = next((c[1] for c in pool if c[1]["shot_id"] != s["shot_id"]), None)
     return chosen, gaps, alt
 
 

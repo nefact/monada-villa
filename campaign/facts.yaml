@@ -32,6 +32,11 @@ owner_design_story:
   verified: false
   source: "Owner must confirm their real role vs. the architect's before R10/R18 publish"
 
+owner_renovation:
+  value: "the owners renovated the house (renovation footage in the archive)"
+  verified: false
+  source: "Owner to confirm scope and dates of the work shown in the May 2023 album before R21 publishes"
+
 # --- Never used in days 1–29. Day 30 only once verified. ---
 beach_distance:
   value: "about 6 minutes from the beach"

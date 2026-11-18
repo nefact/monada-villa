@@ -22,7 +22,7 @@ reels:
   hook: "This is what {{land_area}} of Bali feels like."
   alt_hook: "Not every Bali home needs more walls."
   slots:
-    - {role: hook, subject: [aerial, garden, pool], shot_type: [wide, aerial], dur: 3.0, prefer: video}
+    - {role: hook, pin: 3499b65f95ae, alt_pin: 600509f91c46, subject: [pool], dur: 3.0}
     - {subject: [living, terrace], dur: 3.5, prefer: video}
     - {subject: [pool], dur: 2.5}
     - {subject: [detail], dur: 2.0}
@@ -443,23 +443,35 @@ reels:
 
 - id: R21
   day: 25
-  title: From our archive
+  title: Before and after
   markets: [AU, UK, SG, IN, KR, CN]
   audio: natural
-  hook: "From our archive: the days we loved most."
-  alt_hook: "A year of Monada, in 20 seconds."
+  hook: "It didn't always look like this."
+  alt_hook: "Every home has a story. Here's ours."
   slots:
-    - {role: hook, subject: [pool, garden, exterior], dur: 3.0, prefer: video}
-    - {subject: [garden], dur: 2.5}
-    - {subject: [living, terrace], dur: 2.5}
-    - {subject: [pool], lighting: [golden, evening], dur: 2.5}
-    - {subject: [detail], dur: 2.5}
-    - {subject: [exterior, pool], lighting: [night, evening], dur: 3.0}
+    - {role: hook, pin: 38d566d4ab65, subject: [renovation], dur: 3.0}
+    - {subject: [renovation], dur: 2.5, text: "Before"}
+    - {subject: [renovation], dur: 2.5}
+    - {subject: [pool], shot_type: [wide], dur: 3.0, text: "After"}
+    - {subject: [living, dining], shot_type: [wide], dur: 2.5}
+    - {subject: [bedroom], dur: 2.5}
+    - {role: endcard, subject: [garden, pool], shot_type: [wide], dur: 3.0, text: "MONADA"}
+  fallback:
+    title: From our archive
+    hook: "From our archive: the days we loved most."
+    alt_hook: "A year of Monada, in 20 seconds."
+    slots:
+      - {role: hook, subject: [pool, garden, exterior], dur: 3.0, prefer: video}
+      - {subject: [garden], dur: 2.5}
+      - {subject: [living, terrace], dur: 2.5}
+      - {subject: [pool], dur: 2.5}
+      - {subject: [detail], dur: 2.5}
+      - {subject: [exterior, pool], lighting: [night, evening], dur: 3.0}
   caption: |
-    A look back through our own photos and videos of Monada.
-    (Archive footage, 2023–2024.)
-  hashtags: ["#FromTheArchive", "#BaliLiving"]
-  notes: "Deliberately archival — the honest framing for older footage."
+    From our own phone archive: some of the work behind the house, and how it turned out.
+  hashtags: ["#BeforeAndAfter", "#Renovation", "#BaliLiving"]
+  facts: [owner_renovation]
+  notes: "Renovation clips' real capture date is unknown (album upload May 2023). Owner confirms what the work was and when."
 
 - id: R22
   day: 27
