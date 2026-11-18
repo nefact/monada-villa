@@ -72,11 +72,11 @@ b97e3bd52b2c,icloud_album2/2023-05-05_b070.jpg,garden;pool,day,wide,,0.5,n,n,?,y
 035a9cf9a046,icloud_album2/2023-05-05_b072.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
 a8b86cd16ef8,icloud_album2/2023-05-05_b073.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
 00f15ff78065,icloud_album2/2023-05-05_b074.jpg,garden,day,wide,,0.5,n,n,?,y,
-9e7c484ef618_s01,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
-9e7c484ef618_s02,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
-9e7c484ef618_s03,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
-9e7c484ef618_s04,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
-9e7c484ef618_s05,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
+9e7c484ef618_s01,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
+9e7c484ef618_s02,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
+9e7c484ef618_s03,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
+9e7c484ef618_s04,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
+9e7c484ef618_s05,icloud_album2/2023-05-05_b075.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
 9d11e21a5247,icloud_album2/2023-05-05_b076.jpg,kitchen;detail,day,medium,,0.5,n,n,?,y,
 3d4c7559998d,icloud_album2/2023-05-06_b077.mp4,office;pool,day,move,,0.5,n,?,?,y,workspace in master bedroom (owner confirmed)
 fb2b0daabd3a,icloud_album2/2023-05-06_b078.jpg,office;pool,day,medium,,0.5,n,n,?,y,workspace in master bedroom (owner confirmed)
@@ -152,10 +152,10 @@ f4f0a36c9fe5,icloud_album2/2023-05-28_b149.jpg,dining;kitchen,day,medium,,0.5,n,
 473f341e5e7e,icloud_album2/2023-05-28_b160.mp4,renovation,day,move,,0.5,n,?,?,n,"renovation-era footage, real capture date unknown — Before/After reel only"
 b25f0db1eb8e_s01,icloud_album2/2023-11-28_b161.mp4,detail;bedroom,day,move,,0.5,n,?,?,y,
 b25f0db1eb8e_s02,icloud_album2/2023-11-28_b161.mp4,living,day,move,,0.5,n,?,?,y,
-79497581c55a_s01,icloud_album2/2023-11-28_b162.mp4,bathroom,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
+79497581c55a_s01,icloud_album2/2023-11-28_b162.mp4,bathroom,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
 79497581c55a_s02,icloud_album2/2023-11-28_b162.mp4,living;detail,day,move,,0.5,n,?,?,y,
-79497581c55a_s03,icloud_album2/2023-11-28_b162.mp4,kitchen,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
-79497581c55a_s04,icloud_album2/2023-11-28_b162.mp4,detail,day,move,,0.5,y,?,?,y,person in frame (owner? needs consent)
+79497581c55a_s03,icloud_album2/2023-11-28_b162.mp4,kitchen,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
+79497581c55a_s04,icloud_album2/2023-11-28_b162.mp4,detail,day,move,,0.5,y,?,?,n,person in frame — owner: do not show
 dcec1ec0f217,icloud_new_villa/2023-02-18_000.jpg,bedroom,day,wide,,0.5,n,n,?,y,
 13669f6f62ef,icloud_new_villa/2023-02-18_001.jpg,bedroom,day,wide,,0.5,n,n,?,y,
 600509f91c46,icloud_new_villa/2023-02-18_003.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
@@ -168,7 +168,7 @@ a995ecd74879,icloud_new_villa/2023-02-19_008.jpg,kitchen;dining,day,medium,,0.5,
 c7396560e3ca,icloud_new_villa/2023-02-20_010.jpg,kitchen,day,wide,,0.5,n,n,?,y,
 d21d6551b3b4,icloud_new_villa/2023-02-20_011.jpg,dining,day,wide,,0.5,n,n,?,y,
 6d1cbdeeff1c,icloud_new_villa/2023-02-20_013.jpg,kitchen,day,wide,,0.5,n,n,?,y,
-8d091453d4b0,icloud_new_villa/2023-02-20_014.jpg,dining;detail,day,detail,,0.5,y,n,?,y,person on sofa in background
+8d091453d4b0,icloud_new_villa/2023-02-20_014.jpg,dining;detail,day,detail,,0.5,y,n,?,n,person in frame — owner: do not show
 42d278c153b8,icloud_new_villa/2023-04-18_015.jpg,garden;detail,day,detail,,0.5,n,n,?,y,
 c666abb8bfab,icloud_new_villa/2023-05-05_016.jpg,detail,day,detail,,0.5,n,n,?,y,
 986d12d74dea,icloud_new_villa/2023-05-05_017.jpg,detail;bedroom,day,detail,,0.5,n,n,?,y,
