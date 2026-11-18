@@ -1,0 +1,31 @@
+# Music direction per Reel, for picking a track from Instagram's licensed library / Meta Sound Collection at upload.
+# These are moods and search words, not specific tracks. No track is claimed to be trending.
+# At upload: Add audio → choose a track → Edit → set "Original audio" to 0 (it only holds the placeholder ambient pad).
+defaults:
+  bpm: "70–95"
+  avoid: "lyrics in the first 3 s, EDM drops, epic trailer music, viral meme sounds"
+briefs:
+  R01: {mood: "open, airy, first impression", genre: "ambient electronic / soft house", search: ["chill house", "ambient", "summer calm"], bpm: "95–110"}
+  R02: {mood: "slow morning, tender", genre: "solo piano / lo-fi", search: ["morning piano", "lofi morning", "soft piano"]}
+  R03: {mood: "organic, green, breathing", genre: "acoustic guitar / nature ambient", search: ["acoustic calm", "nature ambient", "fingerstyle"]}
+  R04: {mood: "watery, day-to-night", genre: "downtempo / chillwave", search: ["downtempo", "chillwave", "pool vibes"]}
+  R05: {mood: "unhurried, sunny", genre: "bossa / lo-fi jazz", search: ["bossa nova", "lofi jazz", "slow living"]}
+  R06: {mood: "minimal, precise", genre: "minimal piano / modern classical", search: ["minimal piano", "modern classical", "neoclassical"]}
+  R07: {mood: "lush, tropical", genre: "organic house / world chill", search: ["organic house", "tropical chill", "balearic"]}
+  R08: {mood: "confident, private", genre: "deep house (soft)", search: ["deep house chill", "lounge"], bpm: "100–118"}
+  R09: {mood: "lazy afternoon", genre: "lo-fi / soft guitar", search: ["lofi chill", "afternoon guitar"]}
+  R10: {mood: "thoughtful, spacious", genre: "ambient piano / cinematic minimal", search: ["ambient piano", "cinematic minimal", "space"]}
+  R11: {mood: "flowing, open doors", genre: "nu-jazz / downtempo", search: ["nu jazz", "downtempo groove"]}
+  R12: {mood: "discovery, calm curiosity", genre: "indie instrumental / acoustic", search: ["indie instrumental", "acoustic travel"]}
+  R13: {mood: "focused but light", genre: "lo-fi beats", search: ["lofi study", "focus beats"]}
+  R14: {mood: "quiet, tactile", genre: "minimal ambient / soft keys", search: ["minimal ambient", "soft keys"]}
+  R15: {mood: "warm, convivial", genre: "jazz guitar / bossa", search: ["jazz guitar", "bossa lounge", "dinner jazz"]}
+  R16: {mood: "restful, soft", genre: "ambient pads / sleep piano", search: ["calm ambient", "relaxing piano"], bpm: "60–80"}
+  R17: {mood: "secluded, still", genre: "ambient / field-recording textures", search: ["ambient nature", "peaceful"]}
+  R18: {mood: "intimate, personal", genre: "emotional piano / strings (gentle)", search: ["emotional piano", "gentle strings"], bpm: "60–80"}
+  R19: {mood: "warm evening", genre: "acoustic / soft soul instrumental", search: ["acoustic evening", "warm guitar"]}
+  R20: {mood: "nostalgic montage", genre: "indie folk instrumental / chillhop", search: ["chillhop", "nostalgic", "indie folk"]}
+  R21: {mood: "looking back, fond", genre: "lo-fi / vintage keys", search: ["nostalgic lofi", "memories"]}
+  R22: {mood: "reflective, a turning page", genre: "cinematic piano", search: ["cinematic piano", "reflective"], bpm: "60–80"}
+  R24: {mood: "anticipation without drama", genre: "ambient pulse / minimal", search: ["ambient pulse", "anticipation calm"]}
+  R25: {mood: "emotional, warm, resolved", genre: "cinematic piano + strings building gently", search: ["cinematic emotional", "piano strings", "new beginning"], bpm: "60–90"}

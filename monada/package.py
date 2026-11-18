@@ -50,6 +50,14 @@ def cta(day: int) -> str:
             else "Follow the story." if day < 30 else "DM MONADA for property details.")
 
 
+def music_lines(b: dict | None, d: dict) -> list[str]:
+    if not b:
+        return []
+    return ["MUSIC (add in Instagram at upload; set Original audio to 0):",
+            f"  mood: {b['mood']}", f"  genre: {b['genre']}", f"  tempo: {b.get('bpm', d.get('bpm', ''))} BPM",
+            f"  search: {', '.join(b['search'])}", f"  avoid: {d.get('avoid', '')}"]
+
+
 def copy(src: Path, dst: Path) -> bool:
     if src.exists():
         dst.parent.mkdir(parents=True, exist_ok=True)
@@ -67,6 +75,8 @@ def package() -> None:
         (PKG / d).mkdir(parents=True)
     reels = sorted(load_yaml("reels.yaml")["reels"], key=lambda r: r["day"])
     loc = load_yaml("captions_localized.yaml") or {}
+    mbf = load_yaml("music_briefs.yaml") or {}
+    mb, md_ = mbf.get("briefs", {}), mbf.get("defaults", {})
     specs = {p.stem: json.loads(p.read_text()) for p in (BUILD / "specs").glob("*.json")}
     used_in = defaultdict(list)
     for name, sp in specs.items():
@@ -121,7 +131,8 @@ def package() -> None:
                f"COVER TITLE: {cover}", "ON-SCREEN TEXT:", *[f"  · {t}" for t in onscreen], "",
                "CAPTION:", caption.strip(), "", f"CTA: {cta(d)}", f"HASHTAGS: {' '.join(tags)}", "",
                f"AUDIENCE: {audience(d, mk)}", f"SUGGESTED TEST TIME: {time}",
-               f"UNVERIFIED FACTS: {', '.join(fi) or 'none'}", "", "SOURCES:", *[f"  · {x}" for x in srcs], ""]
+               f"UNVERIFIED FACTS: {', '.join(fi) or 'none'}", "",
+               *music_lines(mb.get(r["id"]), md_), "", "SOURCES:", *[f"  · {x}" for x in srcs], ""]
         (PKG / "06_CAPTIONS" / f"MONADA_D{d:02d}_CAPTION.txt").write_text("\n".join(txt), encoding="utf-8")
         if r["id"] in loc:
             L = loc[r["id"]]
