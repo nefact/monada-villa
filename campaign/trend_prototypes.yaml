@@ -1,0 +1,65 @@
+# Trend-format prototypes (v2 edit style). Hand-picked shots from the archive, cut on a beat grid.
+# beats at `bpm` → seconds. motion: push (zoom in) | pull (zoom out reveal) | none. speed: >1 speeds a video clip up.
+# `at` = where in the clip to start (0 = beginning, 0.5 = middle, 1 = end).
+# Formats are adapted from Nov 2026 trend roundups (NewEngen, NapoleonCat) — see strategy/trends-nov-2026.md.
+bpm: 120
+prototypes:
+
+- id: P1
+  name: camera_roll
+  format: "Camera-roll dump: 12 sub-second clips, end on the best shot (NewEngen 'Lately on my SD card', adapted: archive, so no 'lately')"
+  hook: "From my Bali camera roll"
+  sub: "MONADA · Pererenan"
+  clips:
+    - {shot: 1d986ae6ff33, beats: 1.5, at: 0.3}
+    - {shot: f9c527d7b0fa, beats: 1.5, at: 0.4}
+    - {shot: 198449c928ba, beats: 1.5, at: 0.4}
+    - {shot: 9d714c9cf14d, beats: 1.5, at: 0.4}
+    - {shot: fe18c5386e6f, beats: 1.5, motion: push}
+    - {shot: 89c9263af625_s02, beats: 1.5, at: 0.5}
+    - {shot: 4df7b687d266, beats: 1.5, at: 0.4}
+    - {shot: fcca8b70c29d, beats: 1.5, motion: pull}
+    - {shot: ff401a0881d7, beats: 1.5, at: 0.2}
+    - {shot: c2287d81cbf8, beats: 1.5, motion: push}
+    - {shot: 70151057cef0, beats: 1.5, at: 0.4}
+    - {shot: 8d2fe7cc1b95, beats: 1.5, motion: push}
+    - {shot: 3499b65f95ae, beats: 4, motion: pull, label: "MONADA", label_style: brand}
+
+- id: P2
+  name: a_day_at_monada
+  format: "Day schedule with time labels, last frame = first frame so it loops (NapoleonCat 'The summer schedule')"
+  hook: "A day at Monada"
+  clips:
+    - {shot: 6c69d9a51c48, beats: 3, motion: push, label: "07:00  first swim"}
+    - {shot: 3d4c7559998d, beats: 3, at: 0.3, label: "09:30  desk with a pool view"}
+    - {shot: 00bb1a481ed4, beats: 3, motion: push, label: "13:00  long lunch"}
+    - {shot: fcca8b70c29d, beats: 3, motion: pull, label: "16:00  the courtyard"}
+    - {shot: fe18c5386e6f, beats: 3, motion: push, label: "18:30  bath"}
+    - {shot: 8d2fe7cc1b95, beats: 3, motion: push, label: "21:00  pool lights"}
+    - {shot: 6c69d9a51c48, beats: 2, motion: push, label: "07:00"}
+
+- id: P3
+  name: never_change
+  format: "Numbered countdown — viewers stay for #1"
+  hook: "5 things in this house\nwe'd never change"
+  clips:
+    - {shot: 9d714c9cf14d, beats: 4, at: 0.65}
+    - {shot: 165c531f5c5a, beats: 3.5, motion: push, label: "5  a bath under a chandelier"}
+    - {shot: 600509f91c46, beats: 3.5, motion: pull, label: "4  a fire pit in a walled courtyard"}
+    - {shot: b93e8c5de77f, beats: 3.5, motion: push, label: "3  a desk that faces the pool"}
+    - {shot: c2287d81cbf8, beats: 3.5, motion: push, label: "2  the canopy bedroom"}
+    - {shot: b788f7c51f25, beats: 4.5, motion: pull, label: "1  600 m² of garden and pool"}
+  facts: [land_area]
+
+- id: P4
+  name: walk_in
+  format: "Walking POV cut on the beat (NapoleonCat 'Oh yeah?' walking-shot format), sped-up handheld"
+  hook: "POV: you open the door\nat Monada"
+  clips:
+    - {shot: 9e521908644c_s01, beats: 3, at: 0.55}
+    - {shot: 9e521908644c_s06, beats: 2, at: 0.3, speed: 1.6}
+    - {shot: 9e521908644c_s05, beats: 2, at: 0.3, speed: 1.6}
+    - {shot: 63eb88b51854_s04, beats: 2, at: 0.3, speed: 1.6}
+    - {shot: 63eb88b51854_s11, beats: 2, at: 0.3, speed: 1.6}
+    - {shot: 63eb88b51854_s13, beats: 3, at: 0.3, speed: 1.3}
+    - {shot: 3499b65f95ae, beats: 3, motion: pull, label: "MONADA", label_style: brand}

@@ -32,6 +32,9 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("lint")
     sub.add_parser("manifest")
     sub.add_parser("package")
+    t = sub.add_parser("trend")
+    t.add_argument("--archive", type=Path, default=ROOT / "archive")
+    t.add_argument("--only", nargs="*")
     args = ap.parse_args(argv)
 
     if args.cmd == "ingest":
@@ -47,6 +50,9 @@ def main(argv: list[str] | None = None) -> int:
         from .manifest import lint_all
         res = lint_all()
         return 1 if any(e for e, _ in res.values()) else 0
+    elif args.cmd == "trend":
+        from .trend import render_trends
+        render_trends(args.archive.resolve(), args.only)
     elif args.cmd == "package":
         from .package import package
         package()
