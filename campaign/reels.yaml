@@ -298,7 +298,7 @@ reels:
       - {subject: [detail], dur: 2.5}
       - {subject: [terrace, pool], dur: 3.0}
   caption: |
-    {{home_office}}, a few steps from the garden.
+    A separate study, plus a large desk in the master bedroom — both a few steps from the garden.
   hashtags: ["#WorkFromBali", "#HomeOffice"]
   facts: [home_office]
 

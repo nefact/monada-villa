@@ -20,9 +20,9 @@ pool:
   verified: false
   source: "Owner, earlier briefing — measure"
 home_office:
-  value: "a dedicated home office"
-  verified: false
-  source: "Owner, earlier briefing"
+  value: "a separate home office plus a large workspace in the master bedroom"
+  verified: true
+  source: "Owner confirmed 2026-11-18. Study = room with the orange desk by the carved door; black desk + white chair = master bedroom workspace"
 location:
   value: "Pererenan, Bali"
   verified: false
