@@ -1,0 +1,34 @@
+# Daily Stories. Each frame is rendered as a 1080x1920 clip (6 s) from archive media.
+# `sticker` is added by hand in the Instagram app (polls, questions, countdown, link) — the renderer leaves
+# the upper-middle area clear for it. `from` reuses a shot already in that day's Reel.
+stories:
+- {day: 1,  frames: [{from: R01, text: "New Reel: a first look at Monada"}, {subject: [garden], sticker: "emoji slider 🌿"}]}
+- {day: 2,  frames: [{from: R02, text: "Mornings here"}, {subject: [pool], lighting: [morning, day], sticker: "poll: Swim first or coffee first?"}]}
+- {day: 3,  frames: [{from: R03}, {subject: [detail], text: "Garden details", sticker: "quiz: Guess the plant"}]}
+- {day: 4,  frames: [{subject: [detail], text: "5 details, swipe the new post"}]}
+- {day: 5,  frames: [{from: R04}, {subject: [pool], sticker: "poll: Pool mornings or sunset evenings?"}]}
+- {day: 6,  frames: [{subject: [terrace, living], text: "A slower day"}]}
+- {day: 7,  frames: [{from: R06}, {subject: [living], sticker: "poll: Morning light or golden hour?"}]}
+- {day: 8,  frames: [{subject: [garden], text: "Green all year"}]}
+- {day: 9,  frames: [{from: R08}, {subject: [bedroom], sticker: "question: What makes a house feel like home?"}]}
+- {day: 10, frames: [{subject: [pool, exterior], lighting: [golden, evening, night], text: "Evenings"}]}
+- {day: 11, frames: [{from: R10}, {subject: [garden], sticker: "poll: More bedrooms or more garden?"}]}
+- {day: 12, frames: [{subject: [terrace], text: "Inside or outside?"}]}
+- {day: 13, frames: [{subject: [neighbourhood, beach, entrance], text: "Pererenan diaries"}]}
+- {day: 14, frames: [{subject: [living], text: "New carousel: six spaces"}]}
+- {day: 15, frames: [{from: R13}, {subject: [office, living], sticker: "poll: Could you work from here?"}]}
+- {day: 16, frames: [{subject: [garden, pool], text: "Ask us anything about Bali living", sticker: "question box"}, {subject: [living], text: "Answers tomorrow"}]}
+- {day: 17, frames: [{subject: [detail], text: "Answering your questions"}, {from: R14}]}
+- {day: 18, frames: [{subject: [kitchen, dining], text: "Kitchen to garden"}]}
+- {day: 19, frames: [{from: R16}, {subject: [bathroom, bedroom], sticker: "poll: Bath or outdoor shower?"}]}
+- {day: 20, frames: [{subject: [garden], text: "Privacy feels like this"}]}
+- {day: 21, frames: [{from: R18, text: "Our story"}]}
+- {day: 22, frames: [{subject: [exterior, pool], lighting: [night, evening], text: "After dark"}]}
+- {day: 23, frames: [{subject: [detail], text: "Things you don't notice at first, new carousel"}]}
+- {day: 24, frames: [{from: R20}, {subject: [pool], sticker: "emoji slider ✨"}]}
+- {day: 25, frames: [{from: R21, text: "From our archive"}]}
+- {day: 26, frames: [{subject: [living, garden], text: "30 days of Monada moments"}]}
+- {day: 27, frames: [{from: R22}]}
+- {day: 28, frames: [{subject: [garden, pool], text: "A home filled with memories"}]}
+- {day: 29, frames: [{from: R24, text: "Tomorrow", sticker: "countdown: Tomorrow"}]}
+- {day: 30, frames: [{from: R25, text: "Monada Villa is for sale"}, {subject: [living], text: "Details, DM MONADA", sticker: "link: property brochure"}], reveal: true}

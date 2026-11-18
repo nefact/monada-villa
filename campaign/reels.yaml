@@ -1,0 +1,529 @@
+# 24 archive Reels + 1 sale reveal (R25).
+# Slots are *requirements*, not shot lists: the composer fills them from library/shot_index.csv
+# using only real Monada media. If a required slot can't be filled, the `fallback` story is used;
+# if that fails too, the reel is reported as a gap — nothing is invented.
+#
+# Tag vocabulary (library/tags.csv):
+#   subject:   pool garden living kitchen dining bedroom bathroom office terrace firepit
+#              exterior entrance aerial detail neighbourhood beach
+#   lighting:  morning day golden evening night overcast rain
+#   shot_type: wide medium detail aerial move
+# {{fact}} placeholders resolve from campaign/facts.yaml.
+# Captions never use "now / today / currently" about the footage: the archive is 2024–2025.
+
+reels:
+
+# ───────────── DAYS 1–10 · ATMOSPHERE & ASPIRATION ─────────────
+- id: R01
+  day: 1
+  title: First look
+  markets: [AU, SG, UK, IN, KR, CN]
+  audio: natural
+  hook: "This is what {{land_area}} of Bali feels like."
+  alt_hook: "Not every Bali home needs more walls."
+  slots:
+    - {role: hook, subject: [aerial, garden, pool], shot_type: [wide, aerial], dur: 3.0, prefer: video}
+    - {subject: [living, terrace], dur: 3.5, prefer: video}
+    - {subject: [pool], dur: 2.5}
+    - {subject: [detail], dur: 2.0}
+    - {subject: [garden], dur: 2.5}
+    - {subject: [exterior, aerial, garden], shot_type: [wide, aerial], dur: 3.5}
+    - {role: endcard, subject: [pool, garden, exterior], dur: 3.0, text: "MONADA\nA slower way to live."}
+  caption: |
+    Not just a villa. A different rhythm of life.
+    Space, tropical greenery and quiet architecture in {{location}}.
+    Welcome to Monada — follow our Bali living diaries.
+  hashtags: ["#SlowLiving", "#TropicalModernism"]
+  facts: [land_area, location]
+
+- id: R02
+  day: 2
+  title: Mornings
+  markets: [AU, SG, UK, KR]
+  audio: natural
+  hook: "POV: You wake up here."
+  alt_hook: "Before the world wakes up."
+  slots:
+    - {role: hook, subject: [bedroom, living, pool], lighting: [morning, day], dur: 3.0, prefer: video}
+    - {subject: [living, bedroom], lighting: [morning, day], dur: 3.5}
+    - {subject: [terrace, pool], lighting: [morning, day], dur: 3.5, prefer: video}
+    - {subject: [detail], lighting: [morning, day], dur: 2.5}
+    - {subject: [pool, garden], lighting: [morning, day], dur: 3.5, prefer: video, text: "Would you start your day differently?"}
+  caption: |
+    Light first. Then water. Then everything else.
+    Mornings at Monada, from our home archive.
+  hashtags: ["#BaliMornings", "#SlowMorning"]
+
+- id: R03
+  day: 3
+  title: The garden
+  markets: [AU, UK, IN, CN]
+  audio: natural
+  hook: "Not every Bali home needs more walls."
+  alt_hook: "This is the room we use most. It has no roof."
+  slots:
+    - {role: hook, subject: [garden], shot_type: [wide, aerial, move], dur: 3.0, prefer: video}
+    - {subject: [garden], shot_type: [detail, medium], dur: 2.5}
+    - {subject: [garden, terrace], dur: 3.0}
+    - {subject: [detail], dur: 2.0}
+    - {subject: [garden, pool], shot_type: [wide], dur: 3.5, text: "Some space is meant for living."}
+  caption: |
+    A garden isn't the space left over. At Monada, it's the main room.
+  hashtags: ["#TropicalGarden", "#BaliGarden"]
+
+- id: R04
+  day: 5
+  title: One pool, three moods
+  markets: [AU, SG, IN, UK]
+  audio: natural
+  hook: "One pool. Three different moods."
+  alt_hook: "Same pool. Different hour."
+  slots:
+    - {role: hook, subject: [pool], lighting: [morning, day], dur: 3.5, prefer: video, text: "Morning"}
+    - {subject: [pool], lighting: [day, overcast], dur: 3.5, text: "Afternoon"}
+    - {subject: [pool], lighting: [golden, evening, night], dur: 4.0, text: "Evening"}
+    - {role: endcard, subject: [pool], dur: 3.0, text: "MONADA"}
+  fallback:
+    title: Water, light, stillness
+    hook: "Water, light, stillness."
+    alt_hook: "The sound of this pool."
+    slots:
+      - {role: hook, subject: [pool], dur: 3.5, prefer: video}
+      - {subject: [pool], shot_type: [detail], dur: 3.0}
+      - {subject: [pool, terrace], dur: 3.5}
+      - {role: endcard, subject: [pool, garden], dur: 3.0, text: "MONADA"}
+  caption: |
+    Morning swim. Afternoon shade. Evening glow.
+    The pool sets the rhythm of the day.
+  hashtags: ["#PoolDesign", "#BaliPool"]
+
+- id: R05
+  day: 6
+  title: A slower way to live
+  markets: [AU, UK, KR, SG]
+  audio: natural
+  hook: "A slower way to live in Bali."
+  alt_hook: "What if home felt like a long weekend?"
+  slots:
+    - {role: hook, subject: [terrace, living, pool], dur: 3.0, prefer: video}
+    - {subject: [detail], dur: 2.5}
+    - {subject: [living, kitchen, dining], dur: 3.0}
+    - {subject: [garden], dur: 3.0}
+    - {subject: [pool, terrace], lighting: [golden, evening], dur: 3.5}
+  caption: |
+    No schedule. No rush. Just the house, the garden and the light.
+  hashtags: ["#SlowLiving", "#BaliLife"]
+
+- id: R06
+  day: 7
+  title: Light study
+  markets: [KR, CN, UK]
+  audio: natural
+  hook: "Watch the light move through the house."
+  alt_hook: "Architecture is just light, held still."
+  slots:
+    - {role: hook, subject: [living, detail, exterior], lighting: [morning], dur: 3.0}
+    - {subject: [living, detail, bedroom], lighting: [day], dur: 3.0}
+    - {subject: [exterior, terrace, living], lighting: [golden], dur: 3.0}
+    - {subject: [exterior, pool, living], lighting: [evening, night], dur: 3.5}
+  fallback:
+    title: Shadows and texture
+    hook: "Good design is mostly light and shadow."
+    alt_hook: "Look closer."
+    slots:
+      - {role: hook, subject: [detail], dur: 3.0}
+      - {subject: [detail], dur: 2.5}
+      - {subject: [living, exterior], dur: 3.0}
+      - {subject: [detail], dur: 2.5}
+  caption: |
+    Morning to night, the house changes with the sun.
+  hashtags: ["#ArchitecturalPhotography", "#LightAndShadow"]
+
+- id: R07
+  day: 8
+  title: Green all year
+  markets: [UK, AU, KR]
+  audio: natural
+  hook: "Rainy days hit different in Bali."
+  alt_hook: "The tropics, up close."
+  slots:
+    - {role: hook, subject: [garden, pool, terrace], lighting: [rain, overcast], dur: 3.0, prefer: video}
+    - {subject: [garden, detail], lighting: [rain, overcast], dur: 3.0}
+    - {subject: [living, terrace], lighting: [rain, overcast, day], dur: 3.5}
+    - {subject: [garden], dur: 3.0}
+  fallback:
+    title: Green all year
+    hook: "Green, all year round."
+    alt_hook: "The tropics, up close."
+    slots:
+      - {role: hook, subject: [garden], dur: 3.0, prefer: video}
+      - {subject: [garden, detail], shot_type: [detail], dur: 2.5}
+      - {subject: [garden, terrace], dur: 3.0}
+      - {subject: [garden, pool], shot_type: [wide], dur: 3.5}
+  caption: |
+    The tropics up close — leaves, water, texture.
+  hashtags: ["#TropicalLiving", "#BaliGreen"]
+
+- id: R08
+  day: 9
+  title: This isn't a hotel
+  markets: [SG, IN, AU, CN]
+  audio: natural
+  hook: "This isn't a hotel."
+  alt_hook: "It's not a resort. It's a home."
+  slots:
+    - {role: hook, subject: [pool, aerial, exterior], shot_type: [wide, aerial], dur: 2.5, prefer: video}
+    - {subject: [living], dur: 3.0}
+    - {subject: [kitchen, dining], dur: 2.5}
+    - {subject: [bedroom], dur: 2.5}
+    - {subject: [garden, terrace], dur: 3.0, text: "It's a home."}
+    - {role: endcard, subject: [pool, garden], dur: 2.5, text: "MONADA"}
+  caption: |
+    No reception. No room numbers. A private home with a garden and a pool.
+  hashtags: ["#PrivateVilla", "#HomeInBali"]
+
+- id: R09
+  day: 10
+  title: Evenings
+  markets: [AU, UK, SG, IN]
+  audio: natural
+  hook: "The best part of the day begins here."
+  alt_hook: "Golden hour, at home."
+  slots:
+    - {role: hook, subject: [pool, terrace, exterior], lighting: [golden], dur: 3.0, prefer: video}
+    - {subject: [garden, terrace], lighting: [golden, evening], dur: 3.0}
+    - {subject: [living, dining], lighting: [evening, night], dur: 3.0}
+    - {subject: [pool, exterior], lighting: [night, evening], dur: 3.5}
+  caption: |
+    When the heat softens and the lights come on.
+  hashtags: ["#GoldenHour", "#BaliEvenings"]
+
+# ───────────── DAYS 11–20 · ARCHITECTURE, LIFESTYLE, TRUST ─────────────
+- id: R10
+  day: 11
+  title: Space over bedrooms
+  markets: [AU, SG, UK, IN]
+  audio: natural
+  hook: "Why didn't we build more bedrooms?"
+  alt_hook: "Space is the new luxury."
+  slots:
+    - {role: hook, subject: [aerial, garden], shot_type: [wide, aerial], dur: 3.0, prefer: video}
+    - {subject: [garden], dur: 4.0, text: "Because not every square metre needs a wall."}
+    - {subject: [pool, terrace], dur: 4.0, text: "Some space is meant for living."}
+    - {subject: [exterior, living], shot_type: [wide], dur: 4.5, text: "For light. For privacy. For peace."}
+    - {role: endcard, subject: [garden, pool], dur: 3.0, text: "MONADA\nSpace is the new luxury."}
+  caption: |
+    {{bedrooms}}, and room to breathe.
+    We chose garden, light and privacy over extra walls.
+  hashtags: ["#SpaceIsLuxury", "#TropicalModernism"]
+  facts: [bedrooms, owner_design_story]
+
+- id: R11
+  day: 12
+  title: Inside / outside
+  markets: [AU, UK, KR]
+  audio: natural
+  hook: "Where does the inside end?"
+  alt_hook: "Doors open. Walls disappear."
+  slots:
+    - {role: hook, subject: [living, terrace], shot_type: [move, wide], dur: 3.5, prefer: video}
+    - {subject: [terrace], dur: 3.0}
+    - {subject: [garden, pool], dur: 3.0}
+    - {subject: [living], dur: 3.0}
+    - {subject: [garden, terrace], dur: 3.0}
+  caption: |
+    Indoor-outdoor living, the way the tropics intended.
+  hashtags: ["#IndoorOutdoorLiving", "#BaliArchitecture"]
+
+- id: R12
+  day: 13
+  title: Why Pererenan
+  markets: [AU, UK, IN, SG]
+  audio: natural
+  hook: "Everyone knows Canggu. Have you seen Pererenan?"
+  alt_hook: "Bali, at a slower pace."
+  slots:
+    - {role: hook, subject: [beach, neighbourhood], dur: 3.0, prefer: video}
+    - {subject: [neighbourhood, beach], dur: 3.0}
+    - {subject: [neighbourhood, beach], dur: 3.0}
+    - {subject: [entrance, exterior], dur: 3.0}
+    - {subject: [garden, pool], dur: 3.0, text: "A rhythm that feels your own."}
+  fallback:
+    title: Behind the gate
+    hook: "Behind the gate."
+    alt_hook: "Close to everything. Hidden from it."
+    slots:
+      - {role: hook, subject: [entrance, exterior], dur: 3.0, prefer: video}
+      - {subject: [garden], dur: 3.0}
+      - {subject: [pool, terrace], dur: 3.0}
+      - {subject: [living], dur: 3.0}
+  caption: |
+    Morning coffee, ocean sunsets, and a quieter corner of the Bali coast.
+  hashtags: ["#PererenanBali", "#Canggu"]
+  notes: "Only neighbourhood footage from the archive; venues may have changed — keep shops/brands out of frame or flag."
+
+- id: R13
+  day: 15
+  title: The home office
+  markets: [SG, UK, AU, IN]
+  audio: natural
+  hook: "Your office could feel like a retreat."
+  alt_hook: "Work, but make it tropical."
+  slots:
+    - {role: hook, subject: [office], dur: 3.0}
+    - {subject: [office, detail], dur: 3.0}
+    - {subject: [garden, pool], dur: 3.0, text: "The view from your desk."}
+    - {subject: [office, living], dur: 3.0}
+  fallback:
+    title: Room to focus
+    hook: "Quiet is a design decision."
+    alt_hook: "Room to focus."
+    slots:
+      - {role: hook, subject: [living, detail], dur: 3.0}
+      - {subject: [garden], dur: 3.0}
+      - {subject: [detail], dur: 2.5}
+      - {subject: [terrace, pool], dur: 3.0}
+  caption: |
+    {{home_office}}, a few steps from the garden.
+  hashtags: ["#WorkFromBali", "#HomeOffice"]
+  facts: [home_office]
+
+- id: R14
+  day: 17
+  title: Materials
+  markets: [KR, CN, UK]
+  audio: natural
+  hook: "Good design doesn't need to shout."
+  alt_hook: "Touch, texture, time."
+  slots:
+    - {role: hook, subject: [detail], shot_type: [detail], dur: 2.5}
+    - {subject: [detail], dur: 2.5}
+    - {subject: [detail, bathroom], dur: 2.5}
+    - {subject: [detail, living], dur: 2.5}
+    - {subject: [living, exterior], shot_type: [wide], dur: 3.5}
+  caption: |
+    Texture, proportion and natural light — the quiet details that make a house feel calm.
+  hashtags: ["#InteriorDetails", "#MinimalDesign"]
+
+- id: R15
+  day: 18
+  title: Long lunches
+  markets: [IN, AU, UK]
+  audio: natural
+  hook: "Long lunches. Slow dinners."
+  alt_hook: "The kitchen opens onto the garden."
+  slots:
+    - {role: hook, subject: [kitchen, dining], dur: 3.0}
+    - {subject: [kitchen, detail], dur: 2.5}
+    - {subject: [dining, terrace], dur: 3.0}
+    - {subject: [garden, pool], lighting: [golden, evening], dur: 3.5}
+  caption: |
+    Space to cook, gather and linger.
+  hashtags: ["#TropicalHome", "#BaliLiving"]
+  notes: "No guests/people unless owner-consented family footage. Do not stage synthetic meals."
+
+- id: R16
+  day: 19
+  title: Rest, designed
+  markets: [SG, KR, CN]
+  audio: natural
+  hook: "Rest, designed."
+  alt_hook: "Two bedrooms. Two sanctuaries."
+  slots:
+    - {role: hook, subject: [bedroom], dur: 3.0}
+    - {subject: [bathroom], dur: 2.5}
+    - {subject: [bedroom], dur: 3.0}
+    - {subject: [bathroom, detail], dur: 2.5}
+    - {subject: [garden, pool], dur: 3.0}
+  caption: |
+    {{bedrooms}}, each with its own quiet.
+  hashtags: ["#BedroomDesign", "#BaliVilla"]
+  facts: [bedrooms]
+
+- id: R17
+  day: 20
+  title: Privacy
+  markets: [SG, IN, CN, AU]
+  audio: natural
+  hook: "Privacy feels like this."
+  alt_hook: "No neighbours in the frame."
+  slots:
+    - {role: hook, subject: [garden, aerial], shot_type: [wide, aerial], dur: 3.0, prefer: video}
+    - {subject: [garden], dur: 3.0}
+    - {subject: [pool], dur: 3.0}
+    - {subject: [garden, terrace], dur: 3.5}
+  caption: |
+    A walled tropical garden — open to the sky, closed to the street.
+  hashtags: ["#PrivateGarden", "#BaliVilla"]
+  notes: "Verify the archive doesn't show neighbouring buildings that now look different (new builds since 2024–25)."
+
+# ───────────── DAYS 21–29 · EMOTIONAL STORY & ANTICIPATION ─────────────
+- id: R18
+  day: 21
+  title: Our story
+  markets: [AU, UK, SG, IN, KR, CN]
+  audio: natural
+  hook: "We believe a home should make you feel something."
+  alt_hook: "Some places become part of your story."
+  slots:
+    - {role: hook, subject: [exterior, living, detail], lighting: [golden, evening], dur: 4.0}
+    - {subject: [detail], dur: 4.0, text: "Not because it's big or expensive,"}
+    - {subject: [living, terrace], dur: 4.0, text: "but because every day inside it feels a little different."}
+    - {subject: [garden, pool], dur: 4.0, text: "Monada became our interpretation of living in Bali."}
+    - {role: endcard, subject: [exterior, pool], lighting: [evening, night, golden], dur: 4.0, text: "Every home has a story worth telling."}
+  caption: |
+    Monada became our way of living in Bali.
+    These are moments from our own archive.
+  hashtags: ["#HomeStory", "#BaliLiving"]
+  facts: [owner_design_story]
+  notes: "Owner must approve the wording as true to their story."
+
+- id: R19
+  day: 22
+  title: Evenings by the fire
+  markets: [UK, AU, KR]
+  audio: natural
+  hook: "Evenings by the fire."
+  alt_hook: "Warm light, cool air."
+  slots:
+    - {role: hook, subject: [firepit], dur: 3.5, prefer: video}
+    - {subject: [firepit, terrace], dur: 3.0}
+    - {subject: [garden, pool], lighting: [evening, night], dur: 3.5}
+    - {subject: [exterior], lighting: [night], dur: 3.0}
+  fallback:
+    title: After dark
+    hook: "After dark, the house glows."
+    alt_hook: "Night at Monada."
+    slots:
+      - {role: hook, subject: [pool, exterior], lighting: [night, evening], dur: 3.5}
+      - {subject: [living, terrace], lighting: [night, evening], dur: 3.0}
+      - {subject: [garden, exterior], lighting: [night, evening], dur: 3.5}
+  caption: |
+    The best conversations happen after dark.
+  hashtags: ["#FirePit", "#BaliNights"]
+
+- id: R20
+  day: 24
+  title: A thousand little moments
+  markets: [AU, SG, UK, IN, KR, CN]
+  audio: natural
+  hook: "One home. A thousand little moments."
+  alt_hook: "The things you don't notice at first."
+  slots:
+    - {role: hook, subject: [pool, garden, living], dur: 2.5, prefer: video}
+    - {subject: [detail], dur: 2.0}
+    - {subject: [living], dur: 2.0}
+    - {subject: [garden], dur: 2.0}
+    - {subject: [bedroom], dur: 2.0}
+    - {subject: [pool], dur: 2.0}
+    - {subject: [detail], dur: 2.0}
+    - {subject: [terrace, exterior], dur: 2.5}
+    - {role: endcard, subject: [exterior, pool, garden], lighting: [golden, evening, night], dur: 3.0, text: "MONADA"}
+  caption: |
+    Small things, every day. That's what a home is made of.
+  hashtags: ["#HomeMoments", "#SlowLiving"]
+
+- id: R21
+  day: 25
+  title: From our archive
+  markets: [AU, UK, SG, IN, KR, CN]
+  audio: natural
+  hook: "From our archive: the days we loved most."
+  alt_hook: "Two years of Monada, in 20 seconds."
+  slots:
+    - {role: hook, subject: [pool, garden, exterior], dur: 3.0, prefer: video}
+    - {subject: [garden], dur: 2.5}
+    - {subject: [living, terrace], dur: 2.5}
+    - {subject: [pool], lighting: [golden, evening], dur: 2.5}
+    - {subject: [detail], dur: 2.5}
+    - {subject: [exterior, pool], lighting: [night, evening], dur: 3.0}
+  caption: |
+    A look back through our own photos and videos of Monada.
+    (Archive footage, 2024–2025.)
+  hashtags: ["#FromTheArchive", "#BaliLiving"]
+  notes: "Deliberately archival — the honest framing for older footage."
+
+- id: R22
+  day: 27
+  title: Chapters
+  markets: [AU, UK, SG, IN, KR, CN]
+  audio: natural
+  hook: "Some chapters are meant to be shared."
+  alt_hook: "Every home has a story."
+  slots:
+    - {role: hook, subject: [exterior, pool], lighting: [golden, evening], dur: 3.5}
+    - {subject: [living], lighting: [evening, golden], dur: 3.5}
+    - {subject: [garden], dur: 3.5}
+    - {role: endcard, subject: [pool, exterior], lighting: [night, evening], dur: 4.0, text: "MONADA"}
+  caption: |
+    Every home holds chapters. Some are meant to be shared.
+  hashtags: ["#HomeStory"]
+
+- id: R23
+  day: 28
+  title: A home filled with memories
+  markets: [AU, UK, SG, IN, KR, CN]
+  audio: natural
+  hook: "A home filled with memories."
+  alt_hook: "What stays with you."
+  slots:
+    - {role: hook, subject: [living, terrace, pool], dur: 3.5}
+    - {subject: [detail], dur: 3.0}
+    - {subject: [garden, pool], lighting: [morning, day], dur: 3.0}
+    - {subject: [bedroom, living], dur: 3.0}
+    - {subject: [exterior, pool], lighting: [golden, evening, night], dur: 3.5}
+  caption: |
+    The morning light, the garden, the quiet. These are the things that stay with you.
+  hashtags: ["#HomeMemories"]
+
+- id: R24
+  day: 29
+  title: Teaser
+  markets: [AU, UK, SG, IN, KR, CN]
+  audio: natural
+  hook: "Tomorrow, a new chapter begins."
+  alt_hook: "Something new tomorrow."
+  slots:
+    - {role: hook, subject: [exterior, entrance, pool], lighting: [evening, night, golden], dur: 4.0}
+    - {subject: [detail], dur: 3.5}
+    - {role: endcard, subject: [exterior, pool], lighting: [night, evening], dur: 4.5, text: "MONADA\nTomorrow."}
+  caption: |
+    Tomorrow, a new chapter begins.
+  hashtags: []
+  notes: "Calm, aesthetic, no fake drama. No sale wording."
+
+# ───────────── DAY 30 · REVEAL ─────────────
+- id: R25
+  day: 30
+  title: Monada Villa is for sale
+  reveal: true
+  markets: [AU, SG, UK, IN, KR, CN]
+  audio: natural
+  duration_max: 45
+  hook: "Our home is ready for its next story."
+  alt_hook: "Monada Villa is for sale."
+  slots:
+    - {role: hook, subject: [aerial, pool, exterior], shot_type: [wide, aerial], dur: 4.0, prefer: video, best: true}
+    - {subject: [living, terrace], dur: 2.5}
+    - {subject: [garden], dur: 2.5}
+    - {subject: [pool], dur: 2.5}
+    - {subject: [bedroom], dur: 2.5}
+    - {subject: [office, living], dur: 2.5}
+    - {subject: [kitchen, dining], dur: 2.5}
+    - {subject: [garden, aerial], shot_type: [wide, aerial], dur: 4.0}
+    - {subject: [exterior, pool], lighting: [golden, evening, night], dur: 6.0, text: "MONADA VILLA\nFOR SALE\n{{location}}"}
+    - {role: endcard, subject: [pool, garden, exterior], dur: 5.0, text: "Private viewings.\nEnquire via DM."}
+  caption: |
+    Every home has a story. Ours is ready for a new chapter.
+
+    Over the past month we've shared the little things that make Monada special — the morning light, the tropical garden, the quiet spaces.
+
+    Today we're sharing something new: Monada Villa is for sale.
+
+    In {{location}}: {{land_area}} of land, {{bedrooms}}, {{home_office}}, a private pool and generous indoor-outdoor living.
+    Footage in this campaign comes from our 2024–2025 home archive — ask us about the property's present condition.
+
+    For property details, tenure, asking price and private viewings, send us a DM with MONADA.
+  hashtags: ["#PererenanBali", "#BaliVillaForSale", "#BaliRealEstate"]
+  facts: [location, land_area, bedrooms, home_office]
+  notes: "Price, tenure and handover date go in the DM brochure / details carousel, only from verified facts."

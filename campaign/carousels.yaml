@@ -1,0 +1,48 @@
+# Four 1080x1350 (4:5) carousels from archive photos (or sharp video frames).
+# The first slide carries the title; the last slide is a quiet text card.
+carousels:
+- id: C1
+  day: 4
+  title: "The details make the difference."
+  slides: 6
+  need: [{subject: [detail]}, {subject: [detail]}, {subject: [detail, living]}, {subject: [detail]}, {subject: [detail, bathroom]}]
+  end_text: "Five details.\nOne calm house."
+  caption: |
+    Five details we notice every day. Which one is your favourite? 1–5 below.
+  hashtags: ["#ArchitecturalDetails", "#InteriorDesign"]
+
+- id: C2
+  day: 14
+  title: "A home in six spaces."
+  slides: 7
+  need: [{subject: [living]}, {subject: [kitchen, dining]}, {subject: [bedroom]}, {subject: [office, living]}, {subject: [pool]}, {subject: [garden]}]
+  end_text: "Six spaces.\nOne rhythm."
+  caption: |
+    Living, kitchen, bedrooms, study, pool, garden — swipe through the house.
+  hashtags: ["#HomeTour", "#BaliVilla"]
+
+- id: C3
+  day: 23
+  title: "The things you don't notice at first."
+  slides: 6
+  need: [{subject: [detail]}, {subject: [detail]}, {subject: [garden], shot_type: [detail]}, {subject: [detail]}, {subject: [detail, exterior]}]
+  end_text: "Look closer."
+  caption: |
+    The small things that only show up on the second look.
+  hashtags: ["#DesignDetails"]
+
+- id: C4
+  day: 26
+  title: "A little more than a place to live."
+  slides: 7
+  need: [{subject: [aerial, exterior, garden], shot_type: [wide, aerial]}, {subject: [pool]}, {subject: [living]}, {subject: [garden]}, {subject: [terrace]}, {subject: [exterior, pool], lighting: [golden, evening, night]}]
+  end_text: "MONADA\nPererenan, Bali"
+  caption: |
+    Thirty days of Monada moments, from our archive.
+  hashtags: ["#BaliLiving", "#TropicalModernism"]
+
+# Day-30 property-details carousel (part of the reveal package, not one of the four).
+# Rendered only after facts are verified; content comes from facts.yaml + plan drawing supplied by owner.
+reveal_details:
+  day: 30
+  slides: ["Cover image", "Key facts (verified only)", "Floor plan (owner-supplied)", "Rooms", "Garden & pool", "Tenure & handover (from documents)", "How to enquire"]

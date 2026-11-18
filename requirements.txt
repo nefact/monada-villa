@@ -1,0 +1,5 @@
+pyyaml>=6
+numpy>=1.24
+pillow>=10
+# optional: pillow-heif  (iPhone HEIC photos)
+# system: ffmpeg/ffprobe with libx264, libass; fonts: Inter, WenQuanYi Zen Hei (or any CJK font)

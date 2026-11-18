@@ -1,0 +1,4 @@
+# Owner sign-off. Add an entry only after watching the final render and reading the caption.
+# Example:
+#   R01: {by: "Owner", date: 2026-12-01}
+approved: {}

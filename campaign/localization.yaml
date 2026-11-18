@@ -1,0 +1,92 @@
+# On-screen text translations, keyed by the exact English line as rendered (facts already resolved).
+# zh = Simplified Chinese (Xiaohongshu / WeChat versions), ko = Korean (subtitle test on Instagram).
+# Native-speaker review is required before publishing. Pre-reveal strings must stay free of sale wording.
+strings:
+  "This is what 600 m² of Bali feels like.":   {zh: "这就是 600 m² 的巴厘岛。", ko: "600 m²의 발리는 이런 느낌입니다."}
+  "Not every Bali home needs more walls.":     {zh: "巴厘岛的家，不一定需要更多墙。", ko: "발리의 집에 더 많은 벽이 필요한 건 아니에요."}
+  "MONADA\nA slower way to live.":             {zh: "MONADA\n慢一点生活", ko: "MONADA\n조금 더 느리게 사는 법"}
+  "A slower way to live.":                     {zh: "慢一点生活", ko: "조금 더 느리게 사는 법"}
+  "POV: You wake up here.":                    {zh: "如果你在这里醒来。", ko: "POV: 여기서 눈을 뜬다면."}
+  "Before the world wakes up.":                {zh: "在世界醒来之前。", ko: "세상이 깨어나기 전."}
+  "Would you start your day differently?":     {zh: "你的一天会不会不一样？", ko: "하루의 시작이 달라질까요?"}
+  "This is the room we use most. It has no roof.": {zh: "我们最常待的房间，没有屋顶。", ko: "가장 많이 머무는 방엔 지붕이 없어요."}
+  "Some space is meant for living.":           {zh: "有些空间，只为生活而留。", ko: "어떤 공간은 그저 살기 위해 존재합니다."}
+  "One pool. Three different moods.":          {zh: "一个泳池，三种心情。", ko: "하나의 수영장, 세 가지 무드."}
+  "Same pool. Different hour.":                {zh: "同一个泳池，不同的时刻。", ko: "같은 수영장, 다른 시간."}
+  "Morning":                                   {zh: "清晨", ko: "아침"}
+  "Afternoon":                                 {zh: "午后", ko: "오후"}
+  "Evening":                                   {zh: "傍晚", ko: "저녁"}
+  "Water, light, stillness.":                  {zh: "水，光，静。", ko: "물, 빛, 고요."}
+  "The sound of this pool.":                   {zh: "这个泳池的声音。", ko: "이 수영장의 소리."}
+  "A slower way to live in Bali.":             {zh: "在巴厘岛，慢一点生活。", ko: "발리에서 조금 더 느리게."}
+  "What if home felt like a long weekend?":    {zh: "如果家，就像一个长周末？", ko: "집이 긴 주말처럼 느껴진다면?"}
+  "Watch the light move through the house.":   {zh: "看光如何穿过这座房子。", ko: "빛이 집을 지나가는 걸 보세요."}
+  "Architecture is just light, held still.":   {zh: "建筑，是被留住的光。", ko: "건축은 멈춰 있는 빛입니다."}
+  "Good design is mostly light and shadow.":   {zh: "好的设计，多半是光与影。", ko: "좋은 디자인은 대부분 빛과 그림자예요."}
+  "Look closer.":                              {zh: "再看近一点。", ko: "조금 더 가까이."}
+  "Rainy days hit different in Bali.":         {zh: "巴厘岛的雨天，格外不同。", ko: "발리의 비 오는 날은 다릅니다."}
+  "The tropics, up close.":                    {zh: "近距离的热带。", ko: "가까이에서 본 열대."}
+  "Green, all year round.":                    {zh: "四季常绿。", ko: "일 년 내내 초록."}
+  "This isn't a hotel.":                       {zh: "这不是酒店。", ko: "여긴 호텔이 아니에요."}
+  "It's not a resort. It's a home.":           {zh: "不是度假村，是一个家。", ko: "리조트가 아니라, 집입니다."}
+  "It's a home.":                              {zh: "这是一个家。", ko: "이곳은 집입니다."}
+  "MONADA":                                    {zh: "MONADA", ko: "MONADA"}
+  "The best part of the day begins here.":     {zh: "一天中最好的时光，从这里开始。", ko: "하루 중 가장 좋은 시간이 여기서 시작돼요."}
+  "Golden hour, at home.":                     {zh: "在家里的黄金时刻。", ko: "집에서 맞는 골든아워."}
+  "Why didn't we build more bedrooms?":        {zh: "为什么我们没有多建几间卧室？", ko: "왜 침실을 더 만들지 않았을까요?"}
+  "Space is the new luxury.":                  {zh: "空间，是新的奢侈。", ko: "공간이 새로운 럭셔리입니다."}
+  "Because not every square metre needs a wall.": {zh: "因为不是每一平方米都需要一面墙。", ko: "모든 평방미터에 벽이 필요한 건 아니니까요."}
+  "For light. For privacy. For peace.":        {zh: "为了光，为了私密，为了宁静。", ko: "빛을 위해. 프라이버시를 위해. 평온을 위해."}
+  "MONADA\nSpace is the new luxury.":          {zh: "MONADA\n空间，是新的奢侈", ko: "MONADA\n공간이 새로운 럭셔리"}
+  "Where does the inside end?":                {zh: "室内在哪里结束？", ko: "실내는 어디서 끝날까요?"}
+  "Doors open. Walls disappear.":              {zh: "门一打开，墙就消失了。", ko: "문이 열리면, 벽이 사라져요."}
+  "Everyone knows Canggu. Have you seen Pererenan?": {zh: "大家都知道仓古，你去过 Pererenan 吗？", ko: "짱구는 다 알죠. 페레레난은 보셨나요?"}
+  "Bali, at a slower pace.":                   {zh: "慢节奏的巴厘岛。", ko: "느린 속도의 발리."}
+  "A rhythm that feels your own.":             {zh: "属于你自己的节奏。", ko: "온전히 나의 리듬."}
+  "Behind the gate.":                          {zh: "门后的世界。", ko: "대문 너머."}
+  "Close to everything. Hidden from it.":      {zh: "离一切很近，又与之隔开。", ko: "모든 것과 가깝고, 모든 것에서 숨겨진."}
+  "Your office could feel like a retreat.":    {zh: "你的办公室，也可以像度假。", ko: "사무실이 휴양지처럼 느껴질 수 있어요."}
+  "Work, but make it tropical.":               {zh: "工作，但在热带。", ko: "일하되, 열대에서."}
+  "The view from your desk.":                  {zh: "书桌前的风景。", ko: "책상에서 보이는 풍경."}
+  "Quiet is a design decision.":               {zh: "安静，是一种设计选择。", ko: "고요함은 디자인의 결정입니다."}
+  "Room to focus.":                            {zh: "专注的空间。", ko: "집중을 위한 공간."}
+  "Good design doesn't need to shout.":        {zh: "好的设计，不需要喧哗。", ko: "좋은 디자인은 소리치지 않아요."}
+  "Touch, texture, time.":                     {zh: "触感，肌理，时间。", ko: "촉감, 질감, 시간."}
+  "Long lunches. Slow dinners.":               {zh: "悠长的午餐，缓慢的晚餐。", ko: "긴 점심. 느린 저녁."}
+  "The kitchen opens onto the garden.":        {zh: "厨房向花园敞开。", ko: "주방은 정원으로 열려 있어요."}
+  "Rest, designed.":                           {zh: "为休息而设计。", ko: "휴식을 디자인하다."}
+  "Two bedrooms. Two sanctuaries.":            {zh: "两间卧室，两处静所。", ko: "두 개의 침실, 두 개의 안식처."}
+  "Privacy feels like this.":                  {zh: "私密，就是这种感觉。", ko: "프라이버시는 이런 느낌이에요."}
+  "No neighbours in the frame.":               {zh: "画面里没有邻居。", ko: "프레임 안에 이웃은 없어요."}
+  "We believe a home should make you feel something.": {zh: "我们相信，家应该让人有所感受。", ko: "집은 무언가를 느끼게 해야 한다고 믿어요."}
+  "Some places become part of your story.":    {zh: "有些地方，会成为你故事的一部分。", ko: "어떤 장소는 당신 이야기의 일부가 됩니다."}
+  "Not because it's big or expensive,":        {zh: "不是因为它大或昂贵，", ko: "크거나 비싸서가 아니라,"}
+  "but because every day inside it feels a little different.": {zh: "而是因为在这里的每一天，都有些不同。", ko: "그 안의 하루하루가 조금씩 다르기 때문에."}
+  "Monada became our interpretation of living in Bali.": {zh: "Monada 是我们对巴厘岛生活的诠释。", ko: "Monada는 우리가 해석한 발리의 삶입니다."}
+  "Every home has a story worth telling.":     {zh: "每个家，都有值得讲述的故事。", ko: "모든 집에는 들려줄 이야기가 있어요."}
+  "Evenings by the fire.":                     {zh: "火边的夜晚。", ko: "불가의 저녁."}
+  "Warm light, cool air.":                     {zh: "暖光，凉风。", ko: "따뜻한 빛, 시원한 공기."}
+  "After dark, the house glows.":              {zh: "天黑之后，房子亮了起来。", ko: "어둠이 내리면, 집이 빛나요."}
+  "Night at Monada.":                          {zh: "Monada 的夜。", ko: "Monada의 밤."}
+  "One home. A thousand little moments.":      {zh: "一个家，一千个小瞬间。", ko: "하나의 집, 천 개의 작은 순간."}
+  "The things you don't notice at first.":     {zh: "第一眼注意不到的东西。", ko: "처음엔 눈치채지 못하는 것들."}
+  "From our archive: the days we loved most.": {zh: "来自我们的相册：最爱的那些日子。", ko: "우리의 기록에서: 가장 사랑했던 날들."}
+  "Two years of Monada, in 20 seconds.":       {zh: "20 秒，两年的 Monada。", ko: "20초에 담은 Monada의 2년."}
+  "Some chapters are meant to be shared.":     {zh: "有些篇章，注定要被分享。", ko: "어떤 챕터는 나누기 위해 존재해요."}
+  "Every home has a story.":                   {zh: "每个家都有故事。", ko: "모든 집에는 이야기가 있어요."}
+  "A home filled with memories.":              {zh: "一个装满回忆的家。", ko: "추억으로 가득한 집."}
+  "What stays with you.":                      {zh: "留在心里的东西。", ko: "마음에 남는 것."}
+  "Tomorrow, a new chapter begins.":           {zh: "明天，新的篇章开始。", ko: "내일, 새로운 챕터가 시작됩니다."}
+  "Something new tomorrow.":                   {zh: "明天，有新的消息。", ko: "내일, 새로운 소식."}
+  "MONADA\nTomorrow.":                         {zh: "MONADA\n明天", ko: "MONADA\n내일"}
+  # ── day 30 only ──
+  "Our home is ready for its next story.":     {zh: "我们的家，准备迎来下一个故事。", ko: "우리의 집이 다음 이야기를 맞을 준비가 되었습니다."}
+  "Monada Villa is for sale.":                 {zh: "Monada Villa 正式出售。", ko: "Monada Villa를 매각합니다."}
+  "MONADA VILLA\nFOR SALE\nPererenan, Bali":   {zh: "MONADA VILLA\n出售\n巴厘岛 Pererenan", ko: "MONADA VILLA\n매각\n발리 페레레난"}
+  "Private viewings.\nEnquire via DM.":        {zh: "私人看房\n请私信咨询（微信）", ko: "프라이빗 뷰잉\nDM으로 문의하세요"}
+
+reveal_only:
+  "Our home is ready for its next story.": true
+  "Monada Villa is for sale.": true
+  "MONADA VILLA\nFOR SALE\nPererenan, Bali": true
+  "Private viewings.\nEnquire via DM.": true

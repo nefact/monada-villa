@@ -1,0 +1,27 @@
+# Campaign-wide settings
+start_date: null            # e.g. 2026-12-01 — day 1. Leave null to keep the manifest in "Day N" form.
+post_time_local: "18:30"    # Bali (WITA). Tune per market after week 1 insights.
+reveal_day: 30
+
+render:
+  width: 1080
+  height: 1920
+  fps: 30
+  crf: 18
+  transition: 0.6           # seconds, crossfade
+  grade: "eq=contrast=1.04:saturation=0.90,colorbalance=rm=0.015:bm=-0.015"
+  font: "Inter Light"
+  font_brand: "Inter ExtraLight"
+  font_cjk: "WenQuanYi Zen Hei"
+  frame_bg_light: "#EDE8E0"  # editorial frame colour for horizontal sources (sand)
+  frame_bg_dark: "#1B1A18"
+  min_crop_retention: 0.40   # below this (4:3 ok, 3:2 and 16:9 framed) a horizontal source is framed, not cropped
+  max_upscale: 1.5           # above this the shot is flagged "soft"
+  loudness_lufs: -14
+
+library:
+  archival_after_months: 6   # older assets are flagged archival (never described as current)
+  near_dup_hamming: 6
+  max_uses_per_shot: 3
+
+hashtags_base: ["#MonadaVilla", "#Pererenan", "#BaliArchitecture", "#BaliLiving"]

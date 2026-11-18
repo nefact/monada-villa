@@ -1,0 +1,55 @@
+# Property fact register.
+# Every number or claim that appears in public copy must come from here.
+# A fact with verified: false renders in drafts but BLOCKS publication in the manifest.
+# Owner: set verified: true only with a document/source written in `source`.
+
+land_area:
+  value: "600 m²"
+  verified: false
+  source: "Owner, earlier briefing — confirm against land certificate / lease"
+house_area:
+  value: "≈230 m²"
+  verified: false
+  source: "Owner, earlier briefing — confirm against PBG / plans"
+bedrooms:
+  value: "two ensuite bedrooms"
+  verified: false
+  source: "Owner, earlier briefing"
+pool:
+  value: "8 × 3 m pool"
+  verified: false
+  source: "Owner, earlier briefing — measure"
+home_office:
+  value: "a dedicated home office"
+  verified: false
+  source: "Owner, earlier briefing"
+location:
+  value: "Pererenan, Bali"
+  verified: false
+  source: "Confirm address / banjar"
+owner_design_story:
+  value: "the owners shaped the design of the house"
+  verified: false
+  source: "Owner must confirm their real role vs. the architect's before R10/R18 publish"
+
+# --- Never used in days 1–29. Day 30 only once verified. ---
+beach_distance:
+  value: "about 6 minutes from the beach"
+  verified: false
+  source: "Unverified. State mode (drive/scooter) after testing the route. Not used in any copy yet."
+asking_price:
+  value: null
+  verified: false
+  source: "Needs fresh comparable valuation"
+tenure:
+  value: null          # e.g. leasehold until YYYY / Hak Pakai — from documents only
+  verified: false
+  source: "Notary / legal review"
+tenancy_until:
+  value: "Feb 2027"
+  verified: false
+  source: "Current lease — affects handover date and viewings (48h notice)"
+rental_income:
+  value: null          # never publish without audited figures
+  verified: false
+  source: "Not for public copy"

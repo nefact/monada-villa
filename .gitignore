@@ -1,0 +1,11 @@
+# Owner media never goes to git
+archive/*
+!archive/README.md
+music/licensed/*
+!music/licensed/README.md
+build/
+out/
+library/thumbs/
+library/contact_sheets/
+__pycache__/
+*.pyc
