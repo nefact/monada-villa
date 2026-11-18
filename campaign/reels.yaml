@@ -526,10 +526,10 @@ reels:
 
     Today we're sharing something new: Monada Villa is for sale.
 
-    In {{location}}: {{land_area}} of land, {{bedrooms}}, {{home_office}}, a private pool and generous indoor-outdoor living.
+    In {{location}}: {{land_area}} of land with {{garden}}, a {{house_area}} house, {{bedrooms}}, {{home_office}}, an {{pool}} and {{parking}}.
     Footage in this campaign comes from our 2023–2024 home archive — ask us about the property's present condition.
 
     Private viewings by appointment. DM MONADA for property details.
   hashtags: ["#PererenanBali", "#BaliVillaForSale", "#BaliRealEstate"]
-  facts: [location, land_area, bedrooms, home_office]
+  facts: [location, land_area, house_area, bedrooms, home_office, pool, garden, parking]
   notes: "Price, tenure and handover date go in the DM brochure / details carousel, only from verified facts."

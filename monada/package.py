@@ -208,7 +208,8 @@ def reveal_details(dst: Path, ft: dict, cfg: dict) -> None:
     slides = [
         ("MONADA VILLA", ["A private tropical home", val("location", "LOCATION")]),
         ("Key facts", [f"Land: {val('land_area', 'LAND')}", f"Building: {val('house_area', 'BUILDING AREA')}",
-                       f"Bedrooms: {val('bedrooms', 'BEDROOMS')}", f"Pool: {val('pool', 'POOL')}", f"Study: {val('home_office', 'STUDY')}"]),
+                       f"Bedrooms: {val('bedrooms', 'BEDROOMS')}", f"Pool: {val('pool', 'POOL')}", f"Study: {val('home_office', 'STUDY')}",
+                       f"Garden: {val('garden', 'GARDEN')}", f"Parking: {val('parking', 'PARKING')}"]),
         ("Floor plan", ["[FLOOR PLAN — owner to supply]"]),
         ("Tenure & handover", [f"Tenure: {val('tenure', 'TENURE (from documents)')}", f"Current lease until: {val('tenancy_until', 'LEASE')}"]),
         ("Asking price", [val("asking_price", "ASKING PRICE")]),

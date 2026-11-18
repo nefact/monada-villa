@@ -5,28 +5,36 @@
 
 land_area:
   value: "600 m²"
-  verified: false
-  source: "Owner, earlier briefing — confirm against land certificate / lease"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
 house_area:
   value: "≈230 m²"
-  verified: false
-  source: "Owner, earlier briefing — confirm against PBG / plans"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
 bedrooms:
   value: "two ensuite bedrooms"
-  verified: false
-  source: "Owner, earlier briefing"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
 pool:
   value: "8 × 3 m pool"
-  verified: false
-  source: "Owner, earlier briefing — measure"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
 home_office:
   value: "a separate home office plus a large workspace in the master bedroom"
   verified: true
   source: "Owner confirmed 2026-11-18. Study = room with the orange desk by the carved door; black desk + white chair = master bedroom workspace"
 location:
   value: "Pererenan, Bali"
-  verified: false
-  source: "Confirm address / banjar"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
+parking:
+  value: "on-site parking"
+  verified: true
+  source: "Owner confirmed 2026-11-18 (type/number of spaces not stated — don't specify)"
+garden:
+  value: "a large tropical garden"
+  verified: true
+  source: "Owner confirmed 2026-11-18"
 owner_design_story:
   value: "the owners shaped the design of the house"
   verified: false
