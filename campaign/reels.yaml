@@ -517,8 +517,8 @@ reels:
     - {subject: [dining, kitchen], shot_type: [wide], dur: 2.6}
     - {subject: [garden, firepit], shot_type: [wide], dur: 2.6}
     - {subject: [pool, garden], shot_type: [wide], dur: 4.2, text: "A new chapter begins."}
-    - {pin: 8d2fe7cc1b95, subject: [pool], dur: 9.0, text: "MONADA VILLA\nNOW FOR SALE\n{{location}}"}
-    - {role: endcard, subject: [garden, pool], shot_type: [wide], dur: 6.0, text: "Private viewings by appointment.\nDM MONADA for property details."}
+    - {pin: 8d2fe7cc1b95, subject: [pool], dur: 9.0, style: brand, text: "MONADA VILLA\nNOW FOR SALE\n{{location}}"}
+    - {role: endcard, subject: [garden, pool], shot_type: [wide], dur: 6.0, style: line, text: "Private viewings by appointment.\nDM MONADA for property details."}
   caption: |
     Every home has a story. Ours is ready for a new chapter.
 

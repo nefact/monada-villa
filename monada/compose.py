@@ -90,7 +90,7 @@ def shot_entry(s: dict, slot: dict, dur: float, use_n: int, idx: int, min_ret: f
         "shot_id": s["shot_id"], "file": s["file"], "type": s["type"], "t_in": round(t_in, 3),
         "dur": round(dur, 3), "fit": fit_mode(s, min_ret), "focus_x": fx,
         "motion": ("pan_right" if idx % 2 == 0 else "pan_left") if s["type"] == "photo" else "none",
-        "role": slot.get("role", ""), "text": slot.get("text", ""), "lighting": s["lighting"],
+        "role": slot.get("role", ""), "text": slot.get("text", ""), "style": slot.get("style", ""), "lighting": s["lighting"],
         "has_audio": s.get("has_audio") == "y", "mute": s.get("music_in_source", "").lower() in ("y", "yes", "?"),
         "archival": s.get("archival") == "y", "captured_at": s.get("captured_at", ""),
         "may_be_outdated": s.get("may_be_outdated", "?"), "crop_retention": s["crop_retention"],
@@ -141,7 +141,7 @@ def timeline(shots: list[dict], td: float, hook: str) -> tuple[list[dict], float
         if i == 0 and hook:
             texts.append({"start": 0.15, "end": min(end - td * 0.5, 3.2), "text": hook, "style": "hook"})
         if sh["text"]:
-            style = "brand" if sh["role"] == "endcard" else "line"
+            style = sh.get("style") or ("brand" if sh["role"] == "endcard" else "line")
             texts.append({"start": round(start + (td if i else 0) + 0.2, 2), "end": round(end - 0.15, 2),
                           "text": sh["text"], "style": style})
         t = end - td
