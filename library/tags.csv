@@ -1,0 +1,121 @@
+shot_id,file,subject,lighting,shot_type,mood,crop_focus_x,people_present,music_in_source,may_be_outdated,use,notes
+dcec1ec0f217,icloud_new_villa/2023-02-18_000.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+13669f6f62ef,icloud_new_villa/2023-02-18_001.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+600509f91c46,icloud_new_villa/2023-02-18_003.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
+8bc1d8ed052d,icloud_new_villa/2023-02-18_004.jpg,firepit;detail;garden,day,detail,,0.5,n,n,?,y,
+28f90dc3cdb8,icloud_new_villa/2023-02-18_005.jpg,living;detail,day,medium,,0.5,n,n,?,y,
+3879c3864f24,icloud_new_villa/2023-02-18_006.jpg,living;detail,day,medium,,0.5,n,n,?,y,
+8d2fe7cc1b95,icloud_new_villa/2023-02-19_007.jpg,pool;exterior,night,wide,,0.5,n,n,?,y,only night shot; owner to confirm it is Monada
+a995ecd74879,icloud_new_villa/2023-02-19_008.jpg,kitchen;dining,day,medium,,0.5,n,n,?,y,
+7b7e0d6a0ff0,icloud_new_villa/2023-02-20_009.jpg,living;dining,day,wide,,0.5,n,n,?,y,
+c7396560e3ca,icloud_new_villa/2023-02-20_010.jpg,kitchen,day,wide,,0.5,n,n,?,y,
+d21d6551b3b4,icloud_new_villa/2023-02-20_011.jpg,dining,day,wide,,0.5,n,n,?,y,
+6d1cbdeeff1c,icloud_new_villa/2023-02-20_013.jpg,kitchen,day,wide,,0.5,n,n,?,y,
+8d091453d4b0,icloud_new_villa/2023-02-20_014.jpg,dining;detail,day,detail,,0.5,y,n,?,y,person on sofa in background
+42d278c153b8,icloud_new_villa/2023-04-18_015.jpg,garden;detail,day,detail,,0.5,n,n,?,y,
+c666abb8bfab,icloud_new_villa/2023-05-05_016.jpg,detail,day,detail,,0.5,n,n,?,y,
+986d12d74dea,icloud_new_villa/2023-05-05_017.jpg,detail;bedroom,day,detail,,0.5,n,n,?,y,
+5f57e40f88c9,icloud_new_villa/2023-05-05_018.jpg,bedroom,day,medium,,0.5,n,n,?,y,
+5a101f973786,icloud_new_villa/2023-05-05_019.jpg,detail;bedroom,day,detail,,0.5,n,n,?,y,
+24054775e071,icloud_new_villa/2023-05-05_020.jpg,detail;bedroom,day,detail,,0.5,n,n,?,n,near-identical to 5a101f973786
+16c703606119,icloud_new_villa/2023-05-05_021.jpg,detail;bedroom,day,detail,,0.5,n,n,?,y,
+0128317ce3d9,icloud_new_villa/2023-05-05_023.jpg,office;detail,day,medium,,0.5,n,n,?,y,
+32d54be5af7e,icloud_new_villa/2023-05-05_024.jpg,bathroom,day,wide,,0.5,n,n,?,y,
+77d090be5d61,icloud_new_villa/2023-05-05_025.jpg,detail;pool,day,detail,,0.5,n,n,?,y,
+75ba8dc835d4,icloud_new_villa/2023-05-05_026.jpg,detail;pool,day,detail,,0.5,n,n,?,n,crop of 77d090be5d61
+6c69d9a51c48,icloud_new_villa/2023-05-05_027.jpg,pool;garden,day,wide,,0.5,n,n,?,y,
+56848aac73c6,icloud_new_villa/2023-05-05_028.jpg,pool;terrace,day,wide,,0.5,n,n,?,y,
+9e0a067c35b1,icloud_new_villa/2023-05-05_029.jpg,detail;living,day,detail,,0.5,n,n,?,y,
+0c056c877097,icloud_new_villa/2023-05-05_030.jpg,detail,day,detail,,0.5,n,n,?,y,
+9895c6367f79,icloud_new_villa/2023-05-05_031.jpg,detail,day,detail,,0.5,n,n,?,n,near-identical to 0c056c877097
+886217e1c270,icloud_new_villa/2023-05-05_032.jpg,detail,day,detail,,0.5,n,n,?,y,
+5fdbca1d6fb1,icloud_new_villa/2023-05-05_033.jpg,bathroom,day,wide,,0.5,n,n,?,y,
+b7ad7293d600,icloud_new_villa/2023-05-05_034.jpg,office,day,medium,,0.5,n,n,?,y,
+ab4f60fa575c,icloud_new_villa/2023-05-05_035.jpg,office,day,wide,,0.5,n,n,?,y,
+a7e2db058ac3,icloud_new_villa/2023-05-05_036.jpg,living;detail,day,medium,,0.5,n,n,?,y,
+3499b65f95ae,icloud_new_villa/2023-05-05_037.jpg,pool;garden;exterior,day,wide,,0.5,n,n,?,y,
+46f78f33515c,icloud_new_villa/2023-05-05_038.jpg,garden;pool;exterior,day,wide,,0.5,n,n,?,y,
+b93e8c5de77f,icloud_new_villa/2023-05-06_039.jpg,office;pool,day,medium,,0.5,n,n,?,y,
+6a8fe44a5e2e,icloud_new_villa/2023-05-06_040.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+7c201eb48cbd,icloud_new_villa/2023-05-06_042.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+96a3c00240be,icloud_new_villa/2023-05-14_043.jpg,kitchen;detail,day,detail,,0.5,n,n,?,y,
+cd9a7619b225,icloud_new_villa/2023-05-14_044.jpg,kitchen,day,medium,,0.5,n,n,?,y,
+e753113e1296,icloud_new_villa/2023-05-14_045.jpg,kitchen,day,wide,,0.5,n,n,?,y,
+38a231271d7d,icloud_new_villa/2023-05-27_046.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
+09d9d0f69331,icloud_new_villa/2023-05-28_047.jpg,dining;living,day,wide,,0.5,n,n,?,y,
+4d029793b44f,icloud_new_villa/2023-05-28_048.jpg,dining;kitchen,day,medium,,0.5,n,n,?,y,
+198449c928ba,icloud_new_villa/2023-06-14_049.mp4,detail;garden,day,detail,,0.5,n,?,?,y,
+9e521908644c_s01,icloud_new_villa/2023-06-14_050.mp4,entrance;garden,day,move,,0.5,n,?,?,y,
+9e521908644c_s02,icloud_new_villa/2023-06-14_050.mp4,bedroom,day,move,,0.5,n,?,?,y,
+9e521908644c_s03,icloud_new_villa/2023-06-14_050.mp4,bedroom,day,move,,0.5,n,?,?,y,
+9e521908644c_s04,icloud_new_villa/2023-06-14_050.mp4,entrance;detail,day,move,,0.5,n,?,?,y,
+9e521908644c_s05,icloud_new_villa/2023-06-14_050.mp4,pool;terrace,day,move,,0.5,n,?,?,y,
+9e521908644c_s06,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,y,
+9e521908644c_s07,icloud_new_villa/2023-06-14_050.mp4,kitchen,day,move,,0.5,n,?,?,y,
+9e521908644c_s08,icloud_new_villa/2023-06-14_050.mp4,pool;garden,day,move,,0.5,n,?,?,y,
+9e521908644c_s09,icloud_new_villa/2023-06-14_050.mp4,office,day,move,,0.5,n,?,?,y,
+9e521908644c_s10,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,n,blurred curtains
+9e521908644c_s11,icloud_new_villa/2023-06-14_050.mp4,living,day,move,,0.5,n,?,?,n,tilted/blur
+9e521908644c_s12,icloud_new_villa/2023-06-14_050.mp4,bathroom,day,move,,0.5,n,?,?,y,
+9e521908644c_s13,icloud_new_villa/2023-06-14_050.mp4,pool;terrace,day,move,,0.5,n,?,?,y,
+9e521908644c_s14,icloud_new_villa/2023-06-14_050.mp4,pool,day,move,,0.5,n,?,?,n,camera tilted
+9e521908644c_s15,icloud_new_villa/2023-06-14_050.mp4,garden;firepit,day,move,,0.5,n,?,?,y,
+63eb88b51854_s01,icloud_new_villa/2023-10-30_051.mp4,garden,day,move,,0.5,n,?,?,y,
+63eb88b51854_s02,icloud_new_villa/2023-10-30_051.mp4,bedroom;detail,day,move,,0.5,n,?,?,y,
+63eb88b51854_s03,icloud_new_villa/2023-10-30_051.mp4,entrance;detail,day,move,,0.5,n,?,?,y,
+63eb88b51854_s04,icloud_new_villa/2023-10-30_051.mp4,detail;pool,day,move,,0.5,n,?,?,y,
+63eb88b51854_s05,icloud_new_villa/2023-10-30_051.mp4,living,day,move,,0.5,n,?,?,y,
+63eb88b51854_s06,icloud_new_villa/2023-10-30_051.mp4,kitchen;living,day,move,,0.5,n,?,?,y,
+63eb88b51854_s07,icloud_new_villa/2023-10-30_051.mp4,pool;garden,day,move,,0.5,n,?,?,y,
+63eb88b51854_s08,icloud_new_villa/2023-10-30_051.mp4,bedroom,day,move,,0.5,n,?,?,y,
+63eb88b51854_s09,icloud_new_villa/2023-10-30_051.mp4,living,day,move,,0.5,n,?,?,n,blurred
+63eb88b51854_s10,icloud_new_villa/2023-10-30_051.mp4,bathroom,day,move,,0.5,n,?,?,y,
+63eb88b51854_s11,icloud_new_villa/2023-10-30_051.mp4,pool;garden,day,move,,0.5,n,?,?,y,
+63eb88b51854_s12,icloud_new_villa/2023-10-30_051.mp4,garden;firepit,day,move,,0.5,n,?,?,y,
+63eb88b51854_s13,icloud_new_villa/2023-10-30_051.mp4,garden;firepit;pool,day,move,,0.5,n,?,?,y,
+1c32e8d6a054,icloud_new_villa/2023-12-21_053.jpg,bathroom,day,wide,,0.5,n,n,?,y,
+195d6ca01de9,icloud_new_villa/2023-12-21_054.jpg,kitchen;dining,day,wide,,0.5,n,n,?,y,
+dec871a12a4e,icloud_new_villa/2023-12-21_055.jpg,kitchen,day,wide,,0.5,n,n,?,y,
+47d8d4bfadd1,icloud_new_villa/2023-12-21_056.jpg,dining,day,wide,,0.5,n,n,?,y,
+0948af1692b9,icloud_new_villa/2023-12-21_057.jpg,dining,day,wide,,0.5,n,n,?,y,
+cd0a19a4c1d5,icloud_new_villa/2023-12-21_058.jpg,dining,day,wide,,0.5,n,n,?,y,
+f4e069cd5ad3,icloud_new_villa/2023-12-21_059.jpg,living,day,wide,,0.5,n,n,?,y,
+88576ebac6ec,icloud_new_villa/2023-12-21_060.jpg,living,day,wide,,0.5,n,n,?,y,
+196918044864,icloud_new_villa/2023-12-21_061.jpg,living,day,wide,,0.5,n,n,?,y,
+a2d661ed650f,icloud_new_villa/2023-12-21_062.jpg,bathroom;detail,day,detail,,0.5,n,n,?,y,
+ae1bb6aa55b0,icloud_new_villa/2023-12-21_063.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+8561f3516764,icloud_new_villa/2023-12-21_064.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+299d343bc199,icloud_new_villa/2023-12-21_065.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+73b73f7b72f9,icloud_new_villa/2023-12-21_066.jpg,office;detail,day,medium,,0.5,n,n,?,y,
+88af1ced9d20,icloud_new_villa/2023-12-21_067.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+83605c53f368,icloud_new_villa/2023-12-21_068.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+e02f7bec66de,icloud_new_villa/2023-12-21_069.jpg,bedroom,day,wide,,0.5,n,n,?,y,
+987103bcd626,icloud_new_villa/2023-12-21_070.jpg,office;bedroom,day,wide,,0.5,n,n,?,y,
+8be14001ae1a,icloud_new_villa/2023-12-21_071.jpg,pool;garden,day,wide,,0.5,n,n,?,y,
+23a4c0b10c40,icloud_new_villa/2023-12-21_072.jpg,pool;terrace;exterior,day,wide,,0.5,n,n,?,y,
+adbfe4c9101c,icloud_new_villa/2023-12-21_073.jpg,garden;firepit,day,wide,,0.5,n,n,?,y,
+03795a09e903,icloud_new_villa/2023-12-21_074.jpg,pool;terrace;exterior,day,wide,,0.5,n,n,?,y,
+1490dc5f3d0a_s01,icloud_new_villa/2024-01-15_075.mp4,pool;exterior,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s02,icloud_new_villa/2024-01-15_075.mp4,pool;exterior,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s03,icloud_new_villa/2024-01-15_075.mp4,pool;garden,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s04,icloud_new_villa/2024-01-15_075.mp4,garden;firepit,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s05,icloud_new_villa/2024-01-15_075.mp4,living,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s06,icloud_new_villa/2024-01-15_075.mp4,living,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s07,icloud_new_villa/2024-01-15_075.mp4,dining,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s08,icloud_new_villa/2024-01-15_075.mp4,dining,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s09,icloud_new_villa/2024-01-15_075.mp4,dining;kitchen,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s10,icloud_new_villa/2024-01-15_075.mp4,kitchen,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s11,icloud_new_villa/2024-01-15_075.mp4,kitchen,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s12,icloud_new_villa/2024-01-15_075.mp4,bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s13,icloud_new_villa/2024-01-15_075.mp4,bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s14,icloud_new_villa/2024-01-15_075.mp4,bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s15,icloud_new_villa/2024-01-15_075.mp4,office;bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s16,icloud_new_villa/2024-01-15_075.mp4,bathroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s18,icloud_new_villa/2024-01-15_075.mp4,bathroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s19,icloud_new_villa/2024-01-15_075.mp4,bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s20,icloud_new_villa/2024-01-15_075.mp4,bedroom;detail,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s21,icloud_new_villa/2024-01-15_075.mp4,bedroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s23,icloud_new_villa/2024-01-15_075.mp4,office,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s24,icloud_new_villa/2024-01-15_075.mp4,bathroom,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s25,icloud_new_villa/2024-01-15_075.mp4,pool;garden,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed
+1490dc5f3d0a_s26,icloud_new_villa/2024-01-15_075.mp4,pool;exterior,day,move,,0.5,n,?,?,y,edited 2024 tour; horizontal → framed

@@ -99,7 +99,16 @@ def scene_cuts(path: Path, duration: float, threshold: float = 0.32, min_len: fl
     if len(segs) > 1 and segs[0][1] - segs[0][0] < min_len:
         segs[1][0] = segs[0][0]
         segs.pop(0)
-    return [(round(a, 3), round(b, 3)) for a, b in segs]
+    # long uncut takes (handheld walkthroughs): chunk so each piece can be tagged by room
+    out: list[list[float]] = []
+    for a, b in segs:
+        if b - a > 20:
+            n = max(2, round((b - a) / 6))
+            step = (b - a) / n
+            out += [[a + i * step, a + (i + 1) * step] for i in range(n)]
+        else:
+            out.append([a, b])
+    return [(round(a, 3), round(b, 3)) for a, b in out]
 
 
 # ───────── image metrics ─────────

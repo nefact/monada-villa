@@ -12,6 +12,12 @@ strings:
   "This is the room we use most. It has no roof.": {zh: "我们最常待的房间，没有屋顶。", ko: "가장 많이 머무는 방엔 지붕이 없어요."}
   "Some space is meant for living.":           {zh: "有些空间，只为生活而留。", ko: "어떤 공간은 그저 살기 위해 존재합니다."}
   "One pool. Three different moods.":          {zh: "一个泳池，三种心情。", ko: "하나의 수영장, 세 가지 무드."}
+  "One pool. Day and night.":                  {zh: "一个泳池，白天与夜晚。", ko: "하나의 수영장, 낮과 밤."}
+  "After dark":                                {zh: "入夜", ko: "해가 진 뒤"}
+  "A courtyard made for evenings by the fire.": {zh: "一个为火边夜晚而生的庭院。", ko: "불가의 저녁을 위해 만든 안뜰."}
+  "Built for slow evenings.":                  {zh: "为慢慢的夜晚而建。", ko: "느린 저녁을 위해 지은 곳."}
+  "The slowest part of the day.":              {zh: "一天中最慢的时光。", ko: "하루 중 가장 느린 시간."}
+  "Afternoons by the pool.":                   {zh: "泳池边的午后。", ko: "수영장 옆의 오후."}
   "Same pool. Different hour.":                {zh: "同一个泳池，不同的时刻。", ko: "같은 수영장, 다른 시간."}
   "Morning":                                   {zh: "清晨", ko: "아침"}
   "Afternoon":                                 {zh: "午后", ko: "오후"}

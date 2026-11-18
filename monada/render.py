@@ -231,7 +231,7 @@ def localize(texts: list[dict], hook: str, lang: str) -> tuple[list[dict], str, 
     return [{**t, "text": tr_text(t["text"])} for t in texts], tr(hook), missing
 
 
-def render_video(spec: dict, archive: Path, cfg: dict, langs: list[str]) -> dict:
+def render_video(spec: dict, archive: Path, cfg: dict, langs: list[str], skip_en: bool = False) -> dict:
     r = cfg["render"]
     td = r["transition"] if len(spec["shots"]) > 1 else 0
     sub = {"reel": "reels", "story": "stories"}[spec["kind"]]
@@ -266,7 +266,7 @@ def render_video(spec: dict, archive: Path, cfg: dict, langs: list[str]) -> dict
     fc.append(f"{alast}loudnorm=I={r['loudness_lufs']}:TP=-1.5:LRA=11,aresample=48000[aout]")
 
     results = {}
-    for lang in ["en"] + langs:
+    for lang in ([] if skip_en else ["en"]) + langs:
         texts, hook = spec["texts"], spec.get("hook", "")
         missing: list[str] = []
         if lang != "en":
@@ -379,7 +379,7 @@ def render_carousel(spec: dict, archive: Path, cfg: dict) -> list[Path]:
     return outs
 
 
-def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: bool = False) -> None:
+def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: bool = False, skip_en: bool = False) -> None:
     cfg = settings()
     specs = sorted(SPECS.glob("*.json"))
     if not specs:
@@ -395,6 +395,8 @@ def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: 
                 outs = render_carousel(spec, archive, cfg)
                 print(f"✓ {p.stem}: {len(outs)} slides")
             continue
-        res = render_video(spec, archive, cfg, langs if spec["kind"] == "reel" else [])
-        w = res["en"]["warnings"]
-        print(f"✓ {p.stem}: {res['en']['duration']}s" + (f"  ⚠ {len(w)} warning(s)" if w else ""))
+        if skip_en and spec["kind"] != "reel":
+            continue
+        res = render_video(spec, archive, cfg, langs if spec["kind"] == "reel" else [], skip_en)
+        for lang, q in res.items():
+            print(f"✓ {p.stem} [{lang}]: {q['duration']}s" + (f"  ⚠ {len(q['warnings'])} warning(s)" if q["warnings"] else ""), flush=True)

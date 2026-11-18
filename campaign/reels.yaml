@@ -72,16 +72,17 @@ reels:
   hashtags: ["#TropicalGarden", "#BaliGarden"]
 
 - id: R04
+  strict_lighting: true
   day: 5
-  title: One pool, three moods
+  title: Day and night
   markets: [AU, SG, IN, UK]
   audio: natural
-  hook: "One pool. Three different moods."
+  hook: "One pool. Day and night."
   alt_hook: "Same pool. Different hour."
   slots:
-    - {role: hook, subject: [pool], lighting: [morning, day], dur: 3.5, prefer: video, text: "Morning"}
-    - {subject: [pool], lighting: [day, overcast], dur: 3.5, text: "Afternoon"}
-    - {subject: [pool], lighting: [golden, evening, night], dur: 4.0, text: "Evening"}
+    - {role: hook, subject: [pool], lighting: [morning, day], dur: 3.5, prefer: video}
+    - {subject: [pool], lighting: [day, overcast], dur: 3.5}
+    - {subject: [pool], lighting: [evening, night], dur: 4.0, text: "After dark"}
     - {role: endcard, subject: [pool], dur: 3.0, text: "MONADA"}
   fallback:
     title: Water, light, stillness
@@ -93,8 +94,8 @@ reels:
       - {subject: [pool, terrace], dur: 3.5}
       - {role: endcard, subject: [pool, garden], dur: 3.0, text: "MONADA"}
   caption: |
-    Morning swim. Afternoon shade. Evening glow.
-    The pool sets the rhythm of the day.
+    Bright water by day, still reflections after dark.
+    The pool sets the rhythm of the house.
   hashtags: ["#PoolDesign", "#BaliPool"]
 
 - id: R05
@@ -115,6 +116,7 @@ reels:
   hashtags: ["#SlowLiving", "#BaliLife"]
 
 - id: R06
+  strict_lighting: true
   day: 7
   title: Light study
   markets: [KR, CN, UK]
@@ -140,6 +142,7 @@ reels:
   hashtags: ["#ArchitecturalPhotography", "#LightAndShadow"]
 
 - id: R07
+  strict_lighting: true
   day: 8
   title: Green all year
   markets: [UK, AU, KR]
@@ -183,6 +186,7 @@ reels:
   hashtags: ["#PrivateVilla", "#HomeInBali"]
 
 - id: R09
+  strict_lighting: true
   day: 10
   title: Evenings
   markets: [AU, UK, SG, IN]
@@ -194,8 +198,18 @@ reels:
     - {subject: [garden, terrace], lighting: [golden, evening], dur: 3.0}
     - {subject: [living, dining], lighting: [evening, night], dur: 3.0}
     - {subject: [pool, exterior], lighting: [night, evening], dur: 3.5}
+  fallback:
+    title: Long afternoons
+    strict_lighting: false
+    hook: "The slowest part of the day."
+    alt_hook: "Afternoons by the pool."
+    slots:
+      - {role: hook, subject: [pool, terrace], dur: 3.0, prefer: video}
+      - {subject: [garden, terrace], dur: 3.0}
+      - {subject: [living, dining], dur: 3.0}
+      - {subject: [pool, garden], shot_type: [wide], dur: 3.5}
   caption: |
-    When the heat softens and the lights come on.
+    Long afternoons, slow light, nowhere to be.
   hashtags: ["#GoldenHour", "#BaliEvenings"]
 
 # ───────────── DAYS 11–20 · ARCHITECTURE, LIFESTYLE, TRUST ─────────────
@@ -352,6 +366,7 @@ reels:
     - {subject: [garden], dur: 3.0}
     - {subject: [pool], dur: 3.0}
     - {subject: [garden, terrace], dur: 3.5}
+    - {subject: [garden, firepit], shot_type: [wide], dur: 3.0}
   caption: |
     A walled tropical garden — open to the sky, closed to the street.
   hashtags: ["#PrivateGarden", "#BaliVilla"]
@@ -379,6 +394,7 @@ reels:
   notes: "Owner must approve the wording as true to their story."
 
 - id: R19
+  strict_lighting: true
   day: 22
   title: Evenings by the fire
   markets: [UK, AU, KR]
@@ -391,15 +407,17 @@ reels:
     - {subject: [garden, pool], lighting: [evening, night], dur: 3.5}
     - {subject: [exterior], lighting: [night], dur: 3.0}
   fallback:
-    title: After dark
-    hook: "After dark, the house glows."
-    alt_hook: "Night at Monada."
+    title: The courtyard
+    strict_lighting: false
+    hook: "A courtyard made for evenings by the fire."
+    alt_hook: "Built for slow evenings."
     slots:
-      - {role: hook, subject: [pool, exterior], lighting: [night, evening], dur: 3.5}
-      - {subject: [living, terrace], lighting: [night, evening], dur: 3.0}
-      - {subject: [garden, exterior], lighting: [night, evening], dur: 3.5}
+      - {role: hook, subject: [firepit], dur: 3.5, prefer: video}
+      - {subject: [garden, firepit], shot_type: [wide], dur: 3.5}
+      - {subject: [detail], dur: 3.0}
+      - {subject: [garden], dur: 3.5}
   caption: |
-    The best conversations happen after dark.
+    A walled courtyard and a fire bowl: where the best conversations happen.
   hashtags: ["#FirePit", "#BaliNights"]
 
 - id: R20

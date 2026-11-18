@@ -35,7 +35,8 @@ class Picker:
                 continue
             if subj and not (split_tags(s["subject"]) & subj):
                 continue
-            if light and not (split_tags(s["lighting"]) & light):
+            light_hit = bool(light and split_tags(s["lighting"]) & light)
+            if light and need.get("strict") and not light_hit:
                 continue
             if not best and self.uses[s["shot_id"]] >= self.max_uses:
                 continue
@@ -44,6 +45,8 @@ class Picker:
             sc = s["quality"]
             if prefer and s["type"] == prefer:
                 sc += 12
+            if light_hit:
+                sc += 10
             if stype and split_tags(s["shot_type"]) & stype:
                 sc += 8
             if s["orientation"] == "vertical" or s["crop_retention"] >= self.min_ret:
@@ -108,7 +111,7 @@ def fill(picker: Picker, story: dict, td: float, max_len: float) -> tuple[list[d
     chosen, gaps, used = [], [], set()
     alt = None
     for i, (slot, d) in enumerate(zip(story["slots"], durs)):
-        need = {**slot, "dur": d}
+        need = {**slot, "dur": d, "strict": slot.get("strict", story.get("strict_lighting", False))}
         cands = picker.candidates(need, used, slot.get("role", ""), best=bool(slot.get("best") or story.get("reveal")))
         if not cands:
             gaps.append(f"slot {i + 1} ({slot.get('role') or 'shot'}): no shot with subject={slot.get('subject')}"
@@ -170,12 +173,27 @@ def compose_all() -> dict:
         report["reels"].append(entry)
         if status == "gap":
             continue
-        # partial reels: stretch the shots we do have back to >= MIN_LEN (within each clip's real length)
+        # cap each slot to its clip's real length, then stretch back to >= MIN_LEN where there is headroom
+        chosen = [(sl, min(d, s["duration"]) if s["type"] == "video" else d, s) for sl, d, s in chosen]
         total = sum(d for _, d, _ in chosen) - (len(chosen) - 1) * td
         if total < MIN_LEN:
             f = (TARGET_LEN + (len(chosen) - 1) * td) / sum(d for _, d, _ in chosen)
             chosen = [(sl, min(round(d * f, 2), 6.0) if s["type"] == "photo" else min(round(d * f, 2), s["duration"]), s)
                       for sl, d, s in chosen]
+        # still short (clips capped at their real length): give the deficit to shots with headroom
+        for _ in range(5):
+            total = sum(d for _, d, _ in chosen) - (len(chosen) - 1) * td
+            deficit = MIN_LEN + 0.3 - total
+            if deficit <= 0:
+                break
+            room = [(i, (7.5 if s["type"] == "photo" else s["duration"]) - d) for i, (_, d, s) in enumerate(chosen)]
+            room = [(i, hr) for i, hr in room if hr > 0.05]
+            if not room:
+                break
+            share = deficit / len(room)
+            for i, hr in room:
+                sl, d, s = chosen[i]
+                chosen[i] = (sl, round(d + min(share, hr), 2), s)
         shots_a = []
         for i, (slot, d, s) in enumerate(chosen):
             shots_a.append(shot_entry(s, slot, d, picker.uses[s["shot_id"]], i, min_ret))
@@ -209,7 +227,7 @@ def compose_all() -> dict:
         entry.update({"duration": reel_specs[r["id"]]["duration"], "variants": list(variants),
                       "archival_shots": sum(1 for s in shots_a if s["archival"]),
                       "framed_shots": sum(1 for s in shots_a if s["fit"] == "frame"),
-                      "soft_shots": sum(1 for s in shots_a if s["upscale"] > cfg["render"]["max_upscale"]),
+                      "soft_shots": sum(1 for s in shots_a if s["fit"] == "cover" and s["upscale"] > cfg["render"]["max_upscale"]),
                       "fact_issues": fact_issues})
 
     # Stories
