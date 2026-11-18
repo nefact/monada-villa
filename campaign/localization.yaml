@@ -22,6 +22,8 @@ strings:
   "Every home has a story. Here's ours.":      {zh: "每个家都有故事，这是我们的。", ko: "모든 집엔 이야기가 있죠. 이건 우리의 이야기예요."}
   "Before":                                    {zh: "之前", ko: "이전"}
   "After":                                     {zh: "之后", ko: "이후"}
+  "Tomorrow.":                                 {zh: "明天", ko: "내일"}
+  "NOW FOR SALE\nPererenan, Bali":             {zh: "现正出售\n巴厘岛 Pererenan", ko: "매각 진행 중\n발리 페레레난"}
   "Same pool. Different hour.":                {zh: "同一个泳池，不同的时刻。", ko: "같은 수영장, 다른 시간."}
   "Morning":                                   {zh: "清晨", ko: "아침"}
   "Afternoon":                                 {zh: "午后", ko: "오후"}
@@ -99,6 +101,7 @@ strings:
   "Private viewings.\nEnquire via DM.":        {zh: "私人看房\n请私信咨询（微信）", ko: "프라이빗 뷰잉\nDM으로 문의하세요"}
 
 reveal_only:
+  "NOW FOR SALE\nPererenan, Bali": true
   "A new chapter begins.": true
   "MONADA VILLA\nNOW FOR SALE\nPererenan, Bali": true
   "Private viewings by appointment.\nDM MONADA for property details.": true
