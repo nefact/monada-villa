@@ -419,7 +419,14 @@ def render_all(archive: Path, only: list[str] | None, langs: list[str], skip_b: 
         if resume:
             sub = {"reel": "reels", "story": "stories"}[spec["kind"]]
             need = ([] if skip_en else [""]) + [f"_{l}" for l in (langs if spec["kind"] == "reel" else [])]
-            if all((OUT / sub / f"{spec['out']}{x}.qa.json").exists() for x in need):
+            def fresh(x: str) -> bool:
+                q = OUT / sub / f"{spec['out']}{x}.qa.json"
+                if not q.exists():
+                    return False
+                done = [(d["shot_id"], round(d["t_in"], 2), round(d["dur"], 2)) for d in json.loads(q.read_text())["sources"]]
+                want = [(d["shot_id"], round(d["t_in"], 2), round(d["dur"], 2)) for d in spec["shots"]]
+                return done == want
+            if all(fresh(x) for x in need):
                 continue
         res = render_video(spec, archive, cfg, langs if spec["kind"] == "reel" else [], skip_en)
         for lang, q in res.items():

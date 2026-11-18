@@ -27,7 +27,7 @@ stories:
 - {day: 22, frames: [{from: R19}, {subject: [garden, firepit], text: "The courtyard"}]}
 - {day: 23, frames: [{subject: [detail], text: "Things you don't notice at first, new carousel"}, {subject: [detail]}, {subject: [detail]}]}
 - {day: 24, frames: [{from: R20}, {subject: [pool], sticker: "emoji slider ✨"}]}
-- {day: 25, frames: [{from: R21, text: "Before and after"}, {subject: [renovation], text: "From our phone archive"}, {subject: [pool], shot_type: [wide], text: "After"}]}
+- {day: 25, frames: [{from: R21, text: "From our archive"}, {subject: [garden], shot_type: [wide]}, {subject: [pool], sticker: "emoji slider 🤍"}]}
 - {day: 26, frames: [{subject: [living, garden], text: "30 days of Monada moments"}, {subject: [pool]}, {subject: [garden]}]}
 - {day: 27, frames: [{from: R22}, {subject: [living], text: "Every home has a story"}]}
 - {day: 28, frames: [{subject: [garden, pool], text: "A home filled with memories"}, {subject: [bedroom]}, {subject: [detail], sticker: "question: What would you keep from this house?"}]}
