@@ -10,3 +10,4 @@ library/contact_sheets/
 __pycache__/
 *.pyc
 MONADA_CAMPAIGN/
+music/preview/*.ogg

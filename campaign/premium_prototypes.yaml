@@ -1,0 +1,50 @@
+# Premium-style prototypes. Text times are relative to the clip start (seconds). y = vertical centre in px.
+# trans = transition INTO this clip: cut | whip | whipr | zoom | blur | fade | up
+bpm: 100
+prototypes:
+
+- id: S1
+  music: satie_gymnopedie1_alciatore_PD.ogg
+  music_start: 2.1
+  name: behind_the_wall
+  concept: "Curiosity: what is behind a white wall in Pererenan? Gate → whip reveal → house in elegant fast cuts → loop to the pool"
+  cover: "Behind a white wall in Pererenan"
+  clips:
+    - {shot: 9e521908644c_s01, beats: 3.5, at: 0.45, texts: [{text: "Behind a white wall\nin Pererenan…", style: serif, at: 0.15, y: 760}, {text: "BALI", style: caps, at: 0.5, y: 980}]}
+    - {shot: 3499b65f95ae, beats: 4, motion: pull, trans: whip, texts: [{text: "…there's this.", style: serifbig, at: 0.35, y: 820}]}
+    - {shot: 1d986ae6ff33, beats: 2, at: 0.3, trans: cut}
+    - {shot: 165c531f5c5a, beats: 2, motion: push, trans: cut}
+    - {shot: c2287d81cbf8, beats: 2, motion: push, trans: blur}
+    - {shot: fcca8b70c29d, beats: 2, motion: pull, trans: cut}
+    - {shot: 00bb1a481ed4, beats: 2, motion: push, trans: cut}
+    - {shot: 70151057cef0, beats: 2, at: 0.4, trans: whipr}
+    - {shot: 8d2fe7cc1b95, beats: 3, motion: push, trans: fade}
+    - {shot: 6c69d9a51c48, beats: 4, motion: pull, trans: zoom, texts: [{text: "MONADA", style: brand, at: 0.3, y: 900}, {text: "FOLLOW THE STORY", style: caps, at: 0.9, y: 1060}]}
+
+- id: S2
+  music: satie_gymnopedie1_alciatore_PD.ogg
+  music_start: 2.1
+  name: five_things_premium
+  concept: "Countdown with big italic numerals — viewers stay for #1"
+  cover: "5 things we'd never change"
+  clips:
+    - {shot: 9d714c9cf14d, beats: 3.5, at: 0.65, texts: [{text: "5 things in this house\nwe'd never change", style: serif, at: 0.1, y: 780}]}
+    - {shot: 165c531f5c5a, beats: 3, motion: push, trans: whip, texts: [{text: "5", style: num, at: 0.05, y: 640}, {text: "A BATH UNDER A CHANDELIER", style: caps, at: 0.25, y: 900}]}
+    - {shot: 600509f91c46, beats: 3, motion: pull, trans: whip, texts: [{text: "4", style: num, at: 0.05, y: 640}, {text: "A FIRE PIT IN A WALLED COURTYARD", style: caps, at: 0.25, y: 900}]}
+    - {shot: 3d4c7559998d, beats: 3, at: 0.3, trans: whip, texts: [{text: "3", style: num, at: 0.05, y: 640}, {text: "A DESK THAT FACES THE POOL", style: caps, at: 0.25, y: 900}]}
+    - {shot: c2287d81cbf8, beats: 3, motion: push, trans: whip, texts: [{text: "2", style: num, at: 0.05, y: 640}, {text: "THE CANOPY BEDROOM", style: caps, at: 0.25, y: 900}]}
+    - {shot: b788f7c51f25, beats: 4.5, motion: pull, trans: zoom, texts: [{text: "1", style: num, at: 0.05, y: 640}, {text: "600 M² OF GARDEN AND POOL", style: caps, at: 0.25, y: 900}]}
+
+- id: S3
+  music: satie_gymnopedie1_alciatore_PD.ogg
+  music_start: 2.1
+  name: one_or_two
+  concept: "Comment driver: two real bedrooms, viewer picks 1 or 2"
+  cover: "Which room would you wake up in?"
+  clips:
+    - {shot: 1d986ae6ff33, beats: 3.5, at: 0.3, texts: [{text: "Which room would you\nwake up in?", style: serif, at: 0.1, y: 780}]}
+    - {shot: c2287d81cbf8, beats: 3.5, motion: push, trans: whip, texts: [{text: "1", style: num, at: 0.05, y: 640}, {text: "THE CANOPY ROOM", style: caps, at: 0.3, y: 900}]}
+    - {shot: 5f57e40f88c9, beats: 2, motion: pull, trans: cut}
+    - {shot: 6a8fe44a5e2e, beats: 3.5, motion: push, trans: whip, texts: [{text: "2", style: num, at: 0.05, y: 640}, {text: "THE MASTER BEDROOM", style: caps, at: 0.3, y: 900}]}
+    - {shot: 3d4c7559998d, beats: 2, at: 0.3, trans: cut}
+    - {shot: 3499b65f95ae, beats: 4, motion: pull, trans: zoom, texts: [{text: "1 or 2?", style: serifbig, at: 0.2, y: 800}, {text: "TELL US BELOW", style: caps, at: 0.7, y: 980}]}
