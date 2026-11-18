@@ -31,7 +31,24 @@ python -m monada render --langs zh ko    # 6–7 out/reels (A/B, EN/ZH/KO), out/
                                          #     out/carousels, *.qa.json crop/quality/age checks
 python -m monada lint                    # compliance check of all copy (no media needed)
 python -m monada manifest                # campaign/publication_manifest.md/.csv
+python -m monada package                 # MONADA_CAMPAIGN/01_SOURCE_INDEX … 10_ANALYTICS (git-ignored)
 ```
+
+### Delivery structure (`MONADA_CAMPAIGN/`)
+| Folder | Contents |
+|---|---|
+| `01_SOURCE_INDEX` | `media_index.csv`: every shot with file, timestamps, tags, quality 1–10, story 1–10, duplicate/people/outdated flags, where it is used; plus contact sheets |
+| `02_REELS` | `MONADA_D01_REEL_01.mp4` (hook A), `_B` (hook B), `_ZH` / `_KO` (burned-in subtitles) for the 23 pre-reveal Reels |
+| `03_STORIES` | `MONADA_D01_STORY_1…3.mp4` + sticker notes per day |
+| `04_CAROUSELS` | 4 × 1080×1350 carousels + caption |
+| `05_COVERS` | `MONADA_D01_REEL_01_COVER.jpg` … |
+| `06_CAPTIONS` | `MONADA_D01_CAPTION.txt`: hooks A/B, cover title, on-screen text, caption, CTA, 3–5 hashtags, audience, test time, unverified facts, sources with timestamps |
+| `07_LOCALIZATIONS` | Xiaohongshu (ZH) and Korean captions for priority Reels, SRTs, market playbook |
+| `08_PUBLISHING_CALENDAR` | 30-day calendar (CSV/MD) with approval and publishing status |
+| `09_SALES_REVEAL` | Day-30 hero Reel (~39 s), cover, Stories, DM templates EN/ZH/KO, details carousel (DRAFT until facts are verified) |
+| `10_ANALYTICS` | Tracking template; nothing pre-filled |
+
+Audio: every item carries an original, generated ambient pad (no third-party rights) under the footage. Archive audio is muted because it appears to contain overlaid music. To use a licensed track, put it in `music/licensed/` with its licence file and set `music:` on the Reel. Alternatively, export without the bed and add a track from Instagram's licensed library at upload.
 
 ### What the pipeline does
 - **Ingest:** reads EXIF and container dates (falling back to file date, which is flagged unreliable). Splits long videos into shots by scene detection. Rates each shot A/B/C/reject from sharpness, exposure and resolution, and records orientation, aspect ratio and audio. Finds exact duplicates (SHA-1) and near-duplicates (perceptual hash plus colour match) and keeps the best copy.

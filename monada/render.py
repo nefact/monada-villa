@@ -263,7 +263,26 @@ def render_video(spec: dict, archive: Path, cfg: dict, langs: list[str], skip_en
         fc.append(f"[{n}:a]atrim=0:{spec['duration']:.3f},afade=t=in:d=1,afade=t=out:st={spec['duration'] - 2:.3f}:d=2,volume=0.6[m]")
         fc.append(f"{alast}volume=0.35[nat];[nat][m]amix=inputs=2:normalize=0[amx]")
         alast = "[amx]"
-    fc.append(f"{alast}loudnorm=I={r['loudness_lufs']}:TP=-1.5:LRA=11,aresample=48000[aout]")
+    if not music and r.get("ambient_bed", True):
+        # Original generated ambient bed (no third-party rights): slow chord pad + soft air, varied per item.
+        chords = [(110.0, 164.81, 220.0, 277.18, 329.63), (146.83, 220.0, 277.18, 369.99, 440.0),
+                  (92.5, 138.59, 185.0, 220.0, 277.18), (123.47, 185.0, 246.94, 311.13, 369.99)]
+        ch = chords[sum(map(ord, spec["id"])) % len(chords)]
+        D = spec["duration"]
+        terms = "+".join(f"{0.11 / (1 + i * 0.35):.3f}*sin(2*PI*{f}*t)*(0.55+0.45*sin(2*PI*{0.05 + i * 0.023:.3f}*t+{i * 1.3:.1f}))"
+                         for i, f in enumerate(ch))
+        k = n + (1 if music else 0)
+        extra_in += ["-f", "lavfi", "-t", f"{D:.3f}", "-i", f"aevalsrc='{terms}':s=48000:c=stereo",
+                     "-f", "lavfi", "-t", f"{D:.3f}", "-i", "anoisesrc=c=pink:r=48000:a=0.5"]
+        fc.append(f"[{k}:a]lowpass=f=2400,aecho=0.8:0.6:90|170:0.25|0.18[pad]")
+        fc.append(f"[{k + 1}:a]lowpass=f=450,highpass=f=80,volume=0.10,aformat=channel_layouts=stereo[air]")
+        fc.append(f"[pad][air]amix=inputs=2:normalize=0,afade=t=in:d=2.0,afade=t=out:st={max(0, D - 2.5):.3f}:d=2.5[bed]")
+        fc.append(f"{alast}[bed]amix=inputs=2:normalize=0:duration=first[amb]")
+        alast = "[amb]"
+        lufs = r.get("loudness_ambient_lufs", -17)
+    else:
+        lufs = r["loudness_lufs"]
+    fc.append(f"{alast}loudnorm=I={lufs}:TP=-1.5:LRA=11,aresample=48000[aout]")
 
     results = {}
     for lang in ([] if skip_en else ["en"]) + langs:

@@ -93,10 +93,19 @@ strings:
   "Our home is ready for its next story.":     {zh: "我们的家，准备迎来下一个故事。", ko: "우리의 집이 다음 이야기를 맞을 준비가 되었습니다."}
   "Monada Villa is for sale.":                 {zh: "Monada Villa 正式出售。", ko: "Monada Villa를 매각합니다."}
   "MONADA VILLA\nFOR SALE\nPererenan, Bali":   {zh: "MONADA VILLA\n出售\n巴厘岛 Pererenan", ko: "MONADA VILLA\n매각\n발리 페레레난"}
+  "A new chapter begins.":                     {zh: "新的篇章，就此开始。", ko: "새로운 챕터가 시작됩니다."}
+  "MONADA VILLA\nNOW FOR SALE\nPererenan, Bali": {zh: "MONADA VILLA\n现正出售\n巴厘岛 Pererenan", ko: "MONADA VILLA\n매각 진행 중\n발리 페레레난"}
+  "Private viewings by appointment.\nDM MONADA for property details.": {zh: "私人看房，需预约\n私信 MONADA 获取房产详情", ko: "프라이빗 뷰잉 예약제\nDM으로 MONADA를 보내 상세 정보를 받아보세요"}
   "Private viewings.\nEnquire via DM.":        {zh: "私人看房\n请私信咨询（微信）", ko: "프라이빗 뷰잉\nDM으로 문의하세요"}
 
 reveal_only:
+  "A new chapter begins.": true
+  "MONADA VILLA\nNOW FOR SALE\nPererenan, Bali": true
+  "Private viewings by appointment.\nDM MONADA for property details.": true
   "Our home is ready for its next story.": true
   "Monada Villa is for sale.": true
   "MONADA VILLA\nFOR SALE\nPererenan, Bali": true
+  "A new chapter begins.":                     {zh: "新的篇章，就此开始。", ko: "새로운 챕터가 시작됩니다."}
+  "MONADA VILLA\nNOW FOR SALE\nPererenan, Bali": {zh: "MONADA VILLA\n现正出售\n巴厘岛 Pererenan", ko: "MONADA VILLA\n매각 진행 중\n발리 페레레난"}
+  "Private viewings by appointment.\nDM MONADA for property details.": {zh: "私人看房，需预约\n私信 MONADA 获取房产详情", ko: "프라이빗 뷰잉 예약제\nDM으로 MONADA를 보내 상세 정보를 받아보세요"}
   "Private viewings.\nEnquire via DM.": true

@@ -5,6 +5,7 @@
     python -m monada render   [--only R01 C1] [--langs zh ko] [--no-b]   # 6–7: MP4 / covers / SRT / QA
     python -m monada lint                             # compliance check of all copy (no media needed)
     python -m monada manifest                         # 30-day publication manifest
+    python -m monada package                          # MONADA_CAMPAIGN/01…10 delivery folders
 """
 from __future__ import annotations
 
@@ -30,6 +31,7 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--skip-en", action="store_true", help="only the --langs versions (EN already rendered)")
     sub.add_parser("lint")
     sub.add_parser("manifest")
+    sub.add_parser("package")
     args = ap.parse_args(argv)
 
     if args.cmd == "ingest":
@@ -45,6 +47,9 @@ def main(argv: list[str] | None = None) -> int:
         from .manifest import lint_all
         res = lint_all()
         return 1 if any(e for e, _ in res.values()) else 0
+    elif args.cmd == "package":
+        from .package import package
+        package()
     elif args.cmd == "manifest":
         from .manifest import build_manifest
         build_manifest()

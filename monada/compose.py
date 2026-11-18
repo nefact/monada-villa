@@ -239,7 +239,9 @@ def compose_all() -> dict:
                       "fact_issues": fact_issues})
 
     # Stories
+    story_uses: Counter = Counter()
     for st in load_yaml("stories.yaml")["stories"]:
+        day_used: set[str] = set()
         for k, fr in enumerate(st["frames"], 1):
             s = None
             if fr.get("from") and fr["from"] in reel_specs:
@@ -247,9 +249,13 @@ def compose_all() -> dict:
                 sid = src[min(k, len(src) - 1)]["shot_id"] if k > 1 else src[0]["shot_id"]
                 s = next((x for x in picker.shots if x["shot_id"] == sid), None)
             if s is None:
-                need = {"subject": fr.get("subject"), "lighting": fr.get("lighting"), "dur": 6}
-                c = picker.candidates(need, set())
+                need = {"subject": fr.get("subject"), "lighting": fr.get("lighting"), "shot_type": fr.get("shot_type"), "dur": 6}
+                c = picker.candidates(need, day_used)
+                c = sorted(((sc - 25 * story_uses[x["shot_id"]], x) for sc, x in c), key=lambda t: -t[0])
                 s = c[0][1] if c else None
+            if s is not None:
+                story_uses[s["shot_id"]] += 1
+                day_used.add(s["shot_id"])
             sid = f"D{st['day']:02d}_S{k}"
             if s is None:
                 report["stories"].append({"id": sid, "status": "gap", "need": fr})

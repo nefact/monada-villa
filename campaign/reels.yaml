@@ -489,23 +489,6 @@ reels:
     Every home holds chapters. Some are meant to be shared.
   hashtags: ["#HomeStory"]
 
-- id: R23
-  day: 28
-  title: A home filled with memories
-  markets: [AU, UK, SG, IN, KR, CN]
-  audio: natural
-  hook: "A home filled with memories."
-  alt_hook: "What stays with you."
-  slots:
-    - {role: hook, subject: [living, terrace, pool], dur: 3.5}
-    - {subject: [detail], dur: 3.0}
-    - {subject: [garden, pool], lighting: [morning, day], dur: 3.0}
-    - {subject: [bedroom, living], dur: 3.0}
-    - {subject: [exterior, pool], lighting: [golden, evening, night], dur: 3.5}
-  caption: |
-    The morning light, the garden, the quiet. These are the things that stay with you.
-  hashtags: ["#HomeMemories"]
-
 - id: R24
   day: 29
   title: Teaser
@@ -530,30 +513,34 @@ reels:
   markets: [AU, SG, UK, IN, KR, CN]
   audio: natural
   duration_max: 45
-  hook: "Our home is ready for its next story."
-  alt_hook: "Monada Villa is for sale."
+  cover: "MONADA VILLA — A new chapter"
+  hook: "Every home has a story."
+  alt_hook: "Our home is ready for its next story."
   slots:
-    - {role: hook, subject: [aerial, pool, exterior], shot_type: [wide, aerial], dur: 4.0, prefer: video, best: true}
-    - {subject: [living, terrace], dur: 2.5}
-    - {subject: [garden], dur: 2.5}
-    - {subject: [pool], dur: 2.5}
-    - {subject: [bedroom], dur: 2.5}
-    - {subject: [office, living], dur: 2.5}
-    - {subject: [kitchen, dining], dur: 2.5}
-    - {subject: [garden, aerial], shot_type: [wide, aerial], dur: 4.0}
-    - {subject: [exterior, pool], lighting: [golden, evening, night], dur: 6.0, text: "MONADA VILLA\nFOR SALE\n{{location}}"}
-    - {role: endcard, subject: [pool, garden, exterior], dur: 5.0, text: "Private viewings.\nEnquire via DM."}
+    - {role: hook, pin: 3499b65f95ae, alt_pin: 6c69d9a51c48, subject: [pool], dur: 5.0, best: true}
+    - {subject: [garden], shot_type: [wide], dur: 2.6}
+    - {subject: [living], dur: 2.6}
+    - {subject: [detail], dur: 2.2}
+    - {subject: [pool, terrace], dur: 2.6}
+    - {subject: [bedroom], shot_type: [wide], dur: 2.6}
+    - {subject: [bathroom], shot_type: [wide], dur: 2.2}
+    - {subject: [office], dur: 2.2}
+    - {subject: [dining, kitchen], shot_type: [wide], dur: 2.6}
+    - {subject: [garden, firepit], shot_type: [wide], dur: 2.6}
+    - {subject: [pool, garden], shot_type: [wide], dur: 4.2, text: "A new chapter begins."}
+    - {pin: 8d2fe7cc1b95, subject: [pool], dur: 9.0, text: "MONADA VILLA\nNOW FOR SALE\n{{location}}"}
+    - {role: endcard, subject: [garden, pool], shot_type: [wide], dur: 6.0, text: "Private viewings by appointment.\nDM MONADA for property details."}
   caption: |
     Every home has a story. Ours is ready for a new chapter.
 
-    Over the past month we've shared the little things that make Monada special — the morning light, the tropical garden, the quiet spaces.
+    Over the past month we've shared the little things that make Monada special — the light, the tropical garden, the quiet spaces.
 
     Today we're sharing something new: Monada Villa is for sale.
 
     In {{location}}: {{land_area}} of land, {{bedrooms}}, {{home_office}}, a private pool and generous indoor-outdoor living.
     Footage in this campaign comes from our 2023–2024 home archive — ask us about the property's present condition.
 
-    For property details, tenure, asking price and private viewings, send us a DM with MONADA.
+    Private viewings by appointment. DM MONADA for property details.
   hashtags: ["#PererenanBali", "#BaliVillaForSale", "#BaliRealEstate"]
   facts: [location, land_area, bedrooms, home_office]
   notes: "Price, tenure and handover date go in the DM brochure / details carousel, only from verified facts."

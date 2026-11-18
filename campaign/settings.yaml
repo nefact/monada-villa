@@ -18,10 +18,12 @@ render:
   min_crop_retention: 0.40   # below this (4:3 ok, 3:2 and 16:9 framed) a horizontal source is framed, not cropped
   max_upscale: 1.5           # above this the shot is flagged "soft"
   loudness_lufs: -14
+  ambient_bed: true          # original generated pad under every reel/story unless a licensed track is set
+  loudness_ambient_lufs: -17
 
 library:
   archival_after_months: 6   # older assets are flagged archival (never described as current)
   near_dup_hamming: 6
   max_uses_per_shot: 3
 
-hashtags_base: ["#MonadaVilla", "#Pererenan", "#BaliArchitecture", "#BaliLiving"]
+hashtags_base: ["#MonadaVilla", "#BaliArchitecture"]   # + up to 3 per item = 3–5 total

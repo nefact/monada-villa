@@ -63,6 +63,12 @@ def lint_all(verbose: bool = True) -> dict:
             e += a
             w += b
         res[f"D{st['day']:02d}_stories"] = (e, w)
+    reel_day = {r["id"]: r["day"] for r in load_yaml("reels.yaml")["reels"]}
+    for rid, L in (load_yaml("captions_localized.yaml") or {}).items():
+        if reel_day.get(rid, 0) < rd:
+            blob = " ".join([L.get("zh", {}).get("title", ""), L.get("zh", {}).get("body", ""), L.get("ko", "")])
+            if CN_SALE.search(blob):
+                res.setdefault("captions_localized", ([], []))[0].append(f"{rid}: sale/finance wording before day {rd}")
     loc = load_yaml("localization.yaml") or {}
     for en, tr in (loc.get("strings") or {}).items():
         for lang, s in (tr or {}).items():
